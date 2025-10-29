@@ -1,0 +1,45 @@
+[0.193s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_gimbal_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description
+[0.771s] -- The C compiler identification is GNU 11.4.0
+[0.771s] -- The CXX compiler identification is GNU 11.4.0
+[0.771s] -- Detecting C compiler ABI info
+[0.861s] -- Detecting C compiler ABI info - done
+[0.930s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.930s] -- Detecting C compile features
+[0.932s] -- Detecting C compile features - done
+[0.949s] -- Detecting CXX compiler ABI info
+[1.279s] -- Detecting CXX compiler ABI info - done
+[1.393s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.394s] -- Detecting CXX compile features
+[1.394s] -- Detecting CXX compile features - done
+[1.406s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.848s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[2.002s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.115s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.343s] -- Added test 'lint_cmake' to check CMake code style
+[2.347s] -- Added test 'xmllint' to check XML markup files
+[2.348s] -- Configuring done (2.1s)
+[2.352s] -- Generating done (0.0s)
+[2.353s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description
+[2.379s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_gimbal_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description
+[2.379s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description -- -j12 -l12
+[4.321s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description -- -j12 -l12
+[4.331s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description
+[6.466s] -- Install configuration: ""
+[6.466s] -- Execute custom install script
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/urdf/rm_gimbal.urdf.xacro
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/ament_index/resource_index/package_run_dependencies/rm_gimbal_description
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/ament_index/resource_index/parent_prefix_path/rm_gimbal_description
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.sh
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.dsv
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/environment/path.sh
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/environment/path.dsv
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.bash
+[6.466s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.sh
+[6.467s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.zsh
+[6.467s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.dsv
+[6.467s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/package.dsv
+[6.467s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/ament_index/resource_index/packages/rm_gimbal_description
+[6.467s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/cmake/rm_gimbal_descriptionConfig.cmake
+[6.467s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/cmake/rm_gimbal_descriptionConfig-version.cmake
+[6.467s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description/share/rm_gimbal_description/package.xml
+[6.467s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/rm_gimbal_description

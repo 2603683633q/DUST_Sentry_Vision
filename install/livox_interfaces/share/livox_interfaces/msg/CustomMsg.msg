@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_interfaces/msg/CustomMsg.msg

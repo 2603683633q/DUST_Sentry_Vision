@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/global_interface/rosidl_cmake/rosidl_cmake-extras.cmake

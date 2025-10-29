@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-9b83e712b30d6cf7f493.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "armor_solver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "armor_solver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armor_solver-d7b083deb800e6781703.json",
+					"name" : "armor_solver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "armor_solver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armor_solver_node-77189293a3005e83c7b7.json",
+					"name" : "armor_solver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "armor_solver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armor_solver_uninstall-dc194f6d30245b661940.json",
+					"name" : "armor_solver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-084853c2c83309a47746.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rmsentry/DUST-RM-Sentry/build/armor_solver",
+		"source" : "/home/rmsentry/DUST-RM-Sentry/src/rm_auto_aim/armor_solver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

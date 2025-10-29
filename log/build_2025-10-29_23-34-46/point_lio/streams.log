@@ -1,0 +1,208 @@
+[0.042s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/point_lio': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_localization/point_lio -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/point_lio
+[13.391s] -- The C compiler identification is GNU 11.4.0
+[13.391s] -- The CXX compiler identification is GNU 11.4.0
+[13.391s] -- Detecting C compiler ABI info
+[13.391s] -- Detecting C compiler ABI info - done
+[13.392s] -- Check for working C compiler: /usr/bin/cc - skipped
+[13.392s] -- Detecting C compile features
+[13.392s] -- Detecting C compile features - done
+[13.392s] -- Detecting CXX compiler ABI info
+[13.392s] -- Detecting CXX compiler ABI info - done
+[13.392s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[13.392s] -- Detecting CXX compile features
+[13.392s] -- Detecting CXX compile features - done
+[13.392s] -- Current CPU architecture: x86_64
+[13.392s] -- Processor number:  12
+[13.392s] -- core for MP:  3
+[13.392s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[13.392s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[13.392s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[13.392s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[13.392s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[13.392s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[13.392s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[13.393s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[13.393s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.393s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[13.393s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[13.393s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[13.393s] -- Found FastRTPS: /opt/ros/humble/include
+[13.393s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.393s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[13.393s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[13.393s] -- Found Threads: TRUE
+[13.393s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[13.393s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[13.393s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[13.393s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[13.393s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[13.393s] -- Checking for module 'eigen3'
+[13.393s] --   Found eigen3, version 3.4.0
+[13.393s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1")
+[13.393s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[13.393s] -- Checking for module 'flann'
+[13.394s] --   Found flann, version 1.9.1
+[13.394s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+[13.394s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[13.394s] -- Checking for module 'libusb-1.0'
+[13.394s] --   Found libusb-1.0, version 1.0.26
+[13.394s] -- Found libusb: /usr/local/lib/libusb-1.0.so
+[13.394s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[13.397s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[13.397s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[13.397s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[13.397s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[13.397s] -- Found Qhull version 8.0.2
+[13.397s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[13.397s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+[13.397s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+[13.397s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+[13.397s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+[13.397s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+[13.398s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+[13.398s] -- Found PCL_2D: /usr/include/pcl-1.12
+[13.398s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12
+[13.398s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+[13.398s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+[13.398s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+[13.398s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+[13.398s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+[13.398s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+[13.398s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+[13.398s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+[13.398s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+[13.398s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+[13.398s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
+[13.398s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
+[13.398s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12
+[13.398s] -- Found PCL_MODELER: /usr/include/pcl-1.12
+[13.398s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12
+[13.398s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+[13.398s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+[13.403s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[13.404s] -- Found Eigen3: TRUE (found version "3.4.0")
+[13.404s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[13.404s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[13.404s] -- Found livox_ros_driver2: 1.0.0 (/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[13.404s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12")
+[13.404s] -- Configuring done (9.8s)
+[13.404s] -- Generating done (0.1s)
+[13.404s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/point_lio
+[13.404s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[13.404s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[13.407s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[13.407s]   cmake_policy command to set the policy and suppress this warning.
+[13.408s] 
+[13.408s]   CMake variable EIGEN_ROOT is set to:
+[13.408s] 
+[13.408s]     /usr/include/eigen3
+[13.408s] 
+[13.408s]   For compatibility, find_package is ignoring the variable, but code in a
+[13.408s]   .cmake module might still use it.
+[13.408s] Call Stack (most recent call first):
+[13.408s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[13.408s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[13.408s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[13.408s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[13.408s]   /opt/ros/humble/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[13.408s]   /opt/ros/humble/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[13.408s]   CMakeLists.txt:45 (find_package)
+[13.408s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[13.408s] [0m
+[13.408s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[13.409s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[13.409s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[13.409s]   cmake_policy command to set the policy and suppress this warning.
+[13.409s] 
+[13.409s]   CMake variable FLANN_ROOT is set to:
+[13.409s] 
+[13.409s]     /usr
+[13.409s] 
+[13.409s]   For compatibility, find_package is ignoring the variable, but code in a
+[13.409s]   .cmake module might still use it.
+[13.409s] Call Stack (most recent call first):
+[13.409s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[13.409s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[13.409s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[13.409s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[13.409s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[13.409s]   /opt/ros/humble/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[13.409s]   /opt/ros/humble/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[13.410s]   CMakeLists.txt:45 (find_package)
+[13.410s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[13.410s] [0m
+[13.410s] [33mCMake Warning (dev) at CMakeLists.txt:61 (find_package):
+[13.410s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[13.410s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[13.410s]   the cmake_policy command to set the policy and suppress this warning.
+[13.410s] 
+[13.410s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[13.410s] [0m
+[13.435s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_localization/point_lio -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/point_lio
+[13.436s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/point_lio': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/point_lio -- -j12 -l12
+[24.862s] [ 16%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[24.863s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/date_time/microsec_time_clock.hpp:18[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36[m[K,
+[24.863s]                  from [01m[K/usr/include/boost/interprocess/sync/file_lock.hpp:26[m[K,
+[24.863s]                  from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46[m[K,
+[24.863s]                  from [01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73[m[K,
+[24.863s]                  from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_localization/point_lio/src/IMU_Processing.hpp:20[m[K,
+[24.864s]                  from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_localization/point_lio/src/laserMapping.cpp:12[m[K:
+[24.864s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[24.864s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[24.864s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[83.391s] [ 33%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+[85.371s] In file included from [01m[K/usr/include/boost/bind.hpp:30[m[K,
+[85.371s]                  from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_localization/point_lio/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:42[m[K,
+[85.371s]                  from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_localization/point_lio/src/Estimator.h:4[m[K,
+[85.372s]                  from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_localization/point_lio/src/Estimator.cpp:2[m[K:
+[85.372s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[85.372s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[85.372s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[100.877s] [ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[107.574s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[107.574s] [ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
+[114.692s] [100%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[115.698s] [100%] Built target pointlio_mapping
+[115.706s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/point_lio -- -j12 -l12
+[115.707s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/point_lio': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/point_lio
+[115.711s] -- Install configuration: ""
+[115.712s] -- Execute custom install script
+[115.712s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/lib/point_lio/pointlio_mapping
+[115.717s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/config/avia.yaml
+[115.722s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/config/horizon.yaml
+[115.726s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/config/mid360.yaml
+[115.729s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/config/ouster64.yaml
+[115.733s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/config/velody16.yaml
+[115.739s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[115.743s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[115.747s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[115.750s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[115.754s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[115.758s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[115.763s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[115.766s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[115.770s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[115.774s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[115.777s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[115.781s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/environment/path.sh
+[115.785s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/environment/path.dsv
+[115.788s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/local_setup.bash
+[115.792s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/local_setup.sh
+[115.798s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/local_setup.zsh
+[115.802s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/local_setup.dsv
+[115.805s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/package.dsv
+[115.809s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[115.813s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[115.816s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[115.820s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[115.824s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/point_lio/share/point_lio/package.xml
+[115.830s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/point_lio

@@ -1,0 +1,263 @@
+[0.025s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_navigation/third_party/costmap_converter/costmap_converter_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs
+[0.097s] -- The C compiler identification is GNU 11.4.0
+[0.185s] -- The CXX compiler identification is GNU 11.4.0
+[0.197s] -- Detecting C compiler ABI info
+[0.288s] -- Detecting C compiler ABI info - done
+[0.317s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.317s] -- Detecting C compile features
+[0.317s] -- Detecting C compile features - done
+[0.325s] -- Detecting CXX compiler ABI info
+[0.429s] -- Detecting CXX compiler ABI info - done
+[0.452s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.452s] -- Detecting CXX compile features
+[0.452s] -- Detecting CXX compile features - done
+[0.453s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.646s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.790s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.828s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.876s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.883s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.899s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.934s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.961s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.980s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.028s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.656s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.544s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.420s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[4.420s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.420s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.420s]   the cmake_policy command to set the policy and suppress this warning.
+[4.420s] 
+[4.420s] Call Stack (most recent call first):
+[4.420s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.420s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.420s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[4.420s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.420s] [0m
+[4.489s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[4.491s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.491s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[4.491s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.492s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.492s]   the cmake_policy command to set the policy and suppress this warning.
+[4.492s] 
+[4.492s] Call Stack (most recent call first):
+[4.492s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.492s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.492s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.492s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[4.492s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.495s] [0m
+[4.553s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[4.553s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.554s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.554s]   the cmake_policy command to set the policy and suppress this warning.
+[4.554s] 
+[4.554s] Call Stack (most recent call first):
+[4.554s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.554s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.554s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.554s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[4.554s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.554s] [0m
+[4.583s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[4.583s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.583s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.583s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.653s] -- Found PythonExtra: .so
+[4.874s] -- Configuring done (4.8s)
+[4.997s] -- Generating done (0.1s)
+[5.047s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs
+[5.096s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_navigation/third_party/costmap_converter/costmap_converter_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs
+[5.097s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs -- -j12 -l12
+[7.291s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[7.291s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.292s] [  5%] Built target ament_cmake_python_symlink_costmap_converter_msgs
+[7.292s] running egg_info
+[7.292s] creating costmap_converter_msgs.egg-info
+[7.292s] writing costmap_converter_msgs.egg-info/PKG-INFO
+[7.292s] writing dependency_links to costmap_converter_msgs.egg-info/dependency_links.txt
+[7.292s] writing top-level names to costmap_converter_msgs.egg-info/top_level.txt
+[7.292s] writing manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'
+[7.292s] reading manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'
+[7.292s] writing manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'
+[7.292s] [  5%] Built target ament_cmake_python_build_costmap_converter_msgs_egg
+[7.292s] [  5%] Built target costmap_converter_msgs__cpp
+[7.292s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.292s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.292s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.292s] [ 15%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_c.dir/rosidl_generator_c/costmap_converter_msgs/msg/detail/obstacle_msg__functions.c.o[0m
+[7.292s] [ 17%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_c.dir/rosidl_generator_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__functions.c.o[0m
+[7.292s] [ 20%] [32m[1mLinking C shared library libcostmap_converter_msgs__rosidl_generator_c.so[0m
+[7.330s] [ 20%] Built target costmap_converter_msgs__rosidl_generator_c
+[7.371s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.371s] [ 25%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/costmap_converter_msgs/msg/obstacle_array_msg__type_support.cpp.o[0m
+[7.386s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.386s] [ 30%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/costmap_converter_msgs/msg/obstacle_msg__type_support.cpp.o[0m
+[7.399s] [ 33%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[8.388s] [ 35%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.cpp.o[0m
+[8.397s] [ 38%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.cpp.o[0m
+[8.908s] [ 41%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/costmap_converter_msgs/msg/obstacle_msg__type_support.cpp.o[0m
+[8.914s] [ 43%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/costmap_converter_msgs/msg/obstacle_array_msg__type_support.cpp.o[0m
+[9.013s] [ 46%] [32m[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_c.so[0m
+[9.128s] [ 48%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/costmap_converter_msgs/msg/detail/dds_fastrtps/obstacle_msg__type_support.cpp.o[0m
+[9.133s] [ 51%] [32m[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_cpp.so[0m
+[9.138s] [ 53%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/costmap_converter_msgs/msg/detail/dds_fastrtps/obstacle_array_msg__type_support.cpp.o[0m
+[9.187s] [ 53%] Built target costmap_converter_msgs__rosidl_typesupport_c
+[9.261s] [ 53%] Built target costmap_converter_msgs__rosidl_typesupport_cpp
+[9.274s] [ 56%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/costmap_converter_msgs/msg/detail/obstacle_msg__type_support_c.cpp.o[0m
+[9.286s] [ 58%] [32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support_c.cpp.o[0m
+[10.304s] [ 61%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.c.o[0m
+[10.314s] [ 64%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.c.o[0m
+[10.427s] [ 66%] [32m[1mLinking C shared library libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so[0m
+[10.509s] [ 66%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_c
+[10.744s] [ 69%] [32m[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[10.948s] [ 69%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_cpp
+[11.148s] [ 71%] [32m[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[11.715s] [ 74%] [32m[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.885s] [ 74%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_c
+[11.980s] [ 74%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp
+[12.015s] [ 74%] Built target costmap_converter_msgs
+[12.071s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.440s] [ 76%] Built target costmap_converter_msgs__py
+[13.530s] [ 79%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_py.dir/rosidl_generator_py/costmap_converter_msgs/msg/_obstacle_msg_s.c.o[0m
+[13.549s] [ 82%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_py.dir/rosidl_generator_py/costmap_converter_msgs/msg/_obstacle_array_msg_s.c.o[0m
+[14.348s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/libcostmap_converter_msgs__rosidl_generator_py.so[0m
+[14.435s] [ 84%] Built target costmap_converter_msgs__rosidl_generator_py
+[14.471s] [ 87%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.476s] [ 89%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[14.486s] [ 92%] [32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[14.674s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.766s] [ 94%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_c__pyext
+[14.783s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.987s] [ 97%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_c__pyext
+[14.995s] [100%] [32m[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[15.121s] [100%] Built target costmap_converter_msgs__rosidl_typesupport_c__pyext
+[15.146s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs -- -j12 -l12
+[15.147s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs
+[16.524s] -- Install configuration: ""
+[16.524s] -- Execute custom install script
+[16.524s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/ament_index/resource_index/rosidl_interfaces/costmap_converter_msgs
+[16.524s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__functions.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__struct.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__functions.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__struct.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_array_msg.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_msg.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_generator_c__visibility_control.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/library_path.sh
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/library_path.dsv
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_fastrtps_c.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_fastrtps_c.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__builder.hpp
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__struct.hpp
+[16.525s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__traits.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__builder.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__struct.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__traits.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_array_msg.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_msg.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_introspection_c.h
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_introspection_c.h
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_introspection_cpp.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_introspection_cpp.hpp
+[16.526s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/pythonpath.sh
+[16.527s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/pythonpath.dsv
+[16.527s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info/PKG-INFO
+[16.527s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info/SOURCES.txt
+[16.527s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info/dependency_links.txt
+[16.527s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info/top_level.txt
+[16.527s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/__init__.py
+[16.527s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_c.c
+[16.527s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[16.533s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[16.533s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.533s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.533s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.533s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/libcostmap_converter_msgs__rosidl_generator_py.so
+[16.533s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/__init__.py
+[16.533s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_array_msg.py
+[16.534s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_array_msg_s.c
+[16.534s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_msg.py
+[16.534s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_msg_s.c
+[16.534s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.534s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.534s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.534s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.idl
+[16.534s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.idl
+[16.558s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.msg
+[16.562s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.msg
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/ament_index/resource_index/package_run_dependencies/costmap_converter_msgs
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/ament_index/resource_index/parent_prefix_path/costmap_converter_msgs
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/ament_prefix_path.sh
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/ament_prefix_path.dsv
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/path.sh
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/path.dsv
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.bash
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.sh
+[16.563s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.zsh
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.dsv
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/package.dsv
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/ament_index/resource_index/packages/costmap_converter_msgs
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake-extras.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgsConfig.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgsConfig-version.cmake
+[16.564s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/package.xml
+[16.567s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_c.so
+[16.567s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_c.so" to ""
+[16.567s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so
+[16.567s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[16.567s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so
+[16.567s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[16.568s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so
+[16.568s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so" to ""
+[16.568s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_c.so
+[16.568s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_c.so" to ""
+[16.568s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so
+[16.568s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[16.568s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_cpp.so
+[16.568s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_cpp.so" to ""
+[16.568s] Listing '/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs'...
+[16.568s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/__init__.py'...
+[16.568s] Listing '/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg'...
+[16.568s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/__init__.py'...
+[16.568s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_array_msg.py'...
+[16.568s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_msg.py'...
+[16.568s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_py.so
+[16.568s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_py.so" to ""
+[16.568s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cExport.cmake
+[16.569s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cExport-noconfig.cmake
+[16.569s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[16.569s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[16.569s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cppExport.cmake
+[16.569s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[16.569s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[16.578s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cExport.cmake
+[16.578s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[16.578s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cExport.cmake
+[16.578s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[16.578s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[16.578s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[16.578s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cppExport.cmake
+[16.578s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[16.579s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_pyExport.cmake
+[16.579s] -- Installing: /home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_pyExport-noconfig.cmake
+[16.716s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs

@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/vision_msg/rosidl_generator_py/vision_msg/__init__.py

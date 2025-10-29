@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/hik_camera_first/ament_cmake_environment_hooks/local_setup.sh

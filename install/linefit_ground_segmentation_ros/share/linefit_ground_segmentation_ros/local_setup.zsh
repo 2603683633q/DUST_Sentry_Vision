@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation_ros/ament_cmake_environment_hooks/local_setup.zsh

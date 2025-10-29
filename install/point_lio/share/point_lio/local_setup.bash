@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/point_lio/ament_cmake_environment_hooks/local_setup.bash

@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/rm_bringup/ament_cmake_core/rm_bringupConfig-version.cmake

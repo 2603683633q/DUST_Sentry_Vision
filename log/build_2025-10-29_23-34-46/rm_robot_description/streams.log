@@ -1,0 +1,45 @@
+[0.028s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/rm_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description
+[3.468s] -- The C compiler identification is GNU 11.4.0
+[3.468s] -- The CXX compiler identification is GNU 11.4.0
+[3.468s] -- Detecting C compiler ABI info
+[3.468s] -- Detecting C compiler ABI info - done
+[3.468s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.468s] -- Detecting C compile features
+[3.468s] -- Detecting C compile features - done
+[3.469s] -- Detecting CXX compiler ABI info
+[3.469s] -- Detecting CXX compiler ABI info - done
+[3.469s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.469s] -- Detecting CXX compile features
+[3.469s] -- Detecting CXX compile features - done
+[3.469s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.469s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[3.469s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.469s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.469s] -- Added test 'lint_cmake' to check CMake code style
+[3.469s] -- Added test 'xmllint' to check XML markup files
+[3.469s] -- Configuring done (1.8s)
+[3.469s] -- Generating done (0.0s)
+[3.469s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/rm_robot_description
+[3.492s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/rm_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description
+[3.494s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/rm_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/rm_robot_description -- -j12 -l12
+[11.000s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/rm_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/rm_robot_description -- -j12 -l12
+[11.004s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/rm_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/rm_robot_description
+[22.120s] -- Install configuration: ""
+[22.120s] -- Execute custom install script
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/urdf/sentry.urdf.xacro
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/ament_index/resource_index/package_run_dependencies/rm_robot_description
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/ament_index/resource_index/parent_prefix_path/rm_robot_description
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/environment/ament_prefix_path.sh
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/environment/ament_prefix_path.dsv
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/environment/path.sh
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/environment/path.dsv
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/local_setup.bash
+[22.120s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/local_setup.sh
+[22.121s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/local_setup.zsh
+[22.121s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/local_setup.dsv
+[22.121s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/package.dsv
+[22.121s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/ament_index/resource_index/packages/rm_robot_description
+[22.121s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/cmake/rm_robot_descriptionConfig.cmake
+[22.121s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/cmake/rm_robot_descriptionConfig-version.cmake
+[22.121s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_robot_description/share/rm_robot_description/package.xml
+[22.127s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/rm_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/rm_robot_description

@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/hik_camera_first/ament_cmake_core/hik_camera_firstConfig.cmake

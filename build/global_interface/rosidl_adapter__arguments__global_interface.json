@@ -1,0 +1,16 @@
+{
+  "package_name": "global_interface",
+  "non_idl_tuples": [
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/ObjHP.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/CarPos.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/GameInfo.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/Point2f.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/Serial.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/Detection.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/DetectionArray.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/Decision.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/Autoaim.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/ModeSet.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/global_interface:msg/StrikeLicensing.msg"
+  ]
+}

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from global_interface/msg/GameInfo.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module global_interface {
+  module msg {
+    struct GameInfo {
+      std_msgs::msg::Header header;
+
+      uint16 timestamp;
+
+      uint16 game_stage;
+    };
+  };
+};

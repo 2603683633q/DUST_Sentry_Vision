@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/src/rm_navigation/third_party/costmap_converter/costmap_converter_msgs/msg/ObstacleArrayMsg.msg

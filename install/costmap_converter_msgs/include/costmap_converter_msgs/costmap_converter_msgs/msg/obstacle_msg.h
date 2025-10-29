@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/costmap_converter_msgs/rosidl_generator_c/costmap_converter_msgs/msg/obstacle_msg.h

@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/global_interface/rosidl_typesupport_fastrtps_c/global_interface/msg/detail/strike_licensing__rosidl_typesupport_fastrtps_c.h

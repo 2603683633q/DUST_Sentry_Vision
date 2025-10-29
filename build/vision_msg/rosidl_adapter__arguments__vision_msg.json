@@ -1,0 +1,8 @@
+{
+  "package_name": "vision_msg",
+  "non_idl_tuples": [
+    "/home/rmsentry/DUST-RM-Sentry/src/rm_decision/src/vision_msg:msg/GimblePosition.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/rm_decision/src/vision_msg:msg/DetectedId.msg",
+    "/home/rmsentry/DUST-RM-Sentry/src/rm_decision/src/vision_msg:msg/SelectedId.msg"
+  ]
+}

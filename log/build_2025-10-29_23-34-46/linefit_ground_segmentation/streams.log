@@ -1,0 +1,163 @@
+[0.025s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation
+[0.100s] -- The C compiler identification is GNU 11.4.0
+[0.169s] -- The CXX compiler identification is GNU 11.4.0
+[0.194s] -- Detecting C compiler ABI info
+[0.284s] -- Detecting C compiler ABI info - done
+[0.308s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.308s] -- Detecting C compile features
+[0.308s] -- Detecting C compile features - done
+[0.312s] -- Detecting CXX compiler ABI info
+[0.423s] -- Detecting CXX compiler ABI info - done
+[0.447s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.447s] -- Detecting CXX compile features
+[0.447s] -- Detecting CXX compile features - done
+[0.449s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.677s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.776s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.011s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.018s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.032s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.048s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.074s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.131s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.136s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.286s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[1.333s] -- Found FastRTPS: /opt/ros/humble/include
+[1.395s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.407s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.523s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.526s] -- Found Threads: TRUE
+[1.718s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[1.718s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.718s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.718s]   cmake_policy command to set the policy and suppress this warning.
+[1.718s] 
+[1.718s]   CMake variable EIGEN_ROOT is set to:
+[1.718s] 
+[1.718s]     /usr/include/eigen3
+[1.718s] 
+[1.718s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.718s]   .cmake module might still use it.
+[1.718s] Call Stack (most recent call first):
+[1.718s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[1.718s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[1.718s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.718s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.719s]   /opt/ros/humble/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.719s]   /opt/ros/humble/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[1.719s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[1.719s]   CMakeLists.txt:10 (ament_auto_find_build_dependencies)
+[1.719s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.719s] [0m
+[1.726s] -- Checking for module 'eigen3'
+[1.750s] --   Found eigen3, version 3.4.0
+[1.808s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1")
+[1.808s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.854s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[1.854s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.854s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.854s]   cmake_policy command to set the policy and suppress this warning.
+[1.854s] 
+[1.854s]   CMake variable FLANN_ROOT is set to:
+[1.854s] 
+[1.854s]     /usr
+[1.854s] 
+[1.854s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.854s]   .cmake module might still use it.
+[1.854s] Call Stack (most recent call first):
+[1.854s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[1.856s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[1.856s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[1.856s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.856s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.856s]   /opt/ros/humble/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.856s]   /opt/ros/humble/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[1.856s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[1.856s]   CMakeLists.txt:10 (ament_auto_find_build_dependencies)
+[1.856s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.856s] [0m
+[1.859s] -- Checking for module 'flann'
+[1.886s] --   Found flann, version 1.9.1
+[1.987s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+[1.987s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[5.740s] -- Checking for module 'libusb-1.0'
+[5.779s] --   Found libusb-1.0, version 1.0.26
+[5.893s] -- Found libusb: /usr/local/lib/libusb-1.0.so
+[5.899s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.106s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[8.334s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[8.366s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.382s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[10.118s] -- Found Qhull version 8.0.2
+[12.762s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[13.800s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+[13.802s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+[13.804s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+[13.806s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+[13.807s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+[13.808s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+[13.809s] -- Found PCL_2D: /usr/include/pcl-1.12
+[13.810s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12
+[13.812s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+[13.813s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+[13.815s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+[13.816s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+[13.819s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+[13.821s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+[13.827s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+[13.834s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+[13.839s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+[13.841s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+[13.846s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
+[13.853s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
+[13.859s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12
+[13.859s] -- Found PCL_MODELER: /usr/include/pcl-1.12
+[13.859s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12
+[13.864s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+[13.867s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+[14.163s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[14.168s] -- Found Eigen3: TRUE (found version "3.4.0")
+[14.169s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[15.144s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/linefit_ground_segmentation` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[15.215s] -- Configuring done (15.2s)
+[15.511s] -- Generating done (0.2s)
+[15.542s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation
+[15.683s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST-RM-Sentry/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation
+[15.683s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation -- -j12 -l12
+[16.666s] [ 20%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/segment.cc.o[0m
+[16.666s] [ 40%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/ground_segmentation.cc.o[0m
+[16.666s] [ 60%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/bin.cc.o[0m
+[16.666s] [ 80%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/viewer.cc.o[0m
+[40.443s] [100%] [32m[1mLinking CXX shared library liblinefit_ground_segmentation.so[0m
+[42.109s] [100%] Built target linefit_ground_segmentation
+[42.157s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation -- -j12 -l12
+[42.157s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation
+[44.427s] -- Install configuration: ""
+[44.427s] -- Execute custom install script
+[44.427s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/include/ground_segmentation/bin.h
+[44.427s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/include/ground_segmentation/ground_segmentation.h
+[44.427s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/include/ground_segmentation/segment.h
+[44.427s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/include/ground_segmentation/typedefs.h
+[44.427s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/include/ground_segmentation/viewer.h
+[44.427s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/library_path.sh
+[44.427s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/library_path.dsv
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib/liblinefit_ground_segmentation.so
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/ament_index/resource_index/package_run_dependencies/linefit_ground_segmentation
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/ament_index/resource_index/parent_prefix_path/linefit_ground_segmentation
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/ament_prefix_path.sh
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/ament_prefix_path.dsv
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/path.sh
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/path.dsv
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.bash
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.sh
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.zsh
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.dsv
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.dsv
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/ament_index/resource_index/packages/linefit_ground_segmentation
+[44.428s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_dependencies-extras.cmake
+[44.433s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_include_directories-extras.cmake
+[44.433s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_libraries-extras.cmake
+[44.433s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/linefit_ground_segmentationConfig.cmake
+[44.434s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/linefit_ground_segmentationConfig-version.cmake
+[44.434s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.xml
+[44.441s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/linefit_ground_segmentation

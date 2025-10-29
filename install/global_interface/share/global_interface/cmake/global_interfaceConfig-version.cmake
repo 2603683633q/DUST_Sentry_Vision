@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/global_interface/ament_cmake_core/global_interfaceConfig-version.cmake

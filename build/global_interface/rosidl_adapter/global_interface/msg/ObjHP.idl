@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from global_interface/msg/ObjHP.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module global_interface {
+  module msg {
+    typedef uint16 uint16__16[16];
+    struct ObjHP {
+      std_msgs::msg::Header header;
+
+      uint16__16 hp;
+    };
+  };
+};

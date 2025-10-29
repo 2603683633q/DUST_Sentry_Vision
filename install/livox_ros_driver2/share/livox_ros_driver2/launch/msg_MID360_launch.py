@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/launch/msg_MID360_launch.py

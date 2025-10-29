@@ -1,0 +1,85 @@
+[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable EIGEN_ROOT is set to:
+
+    /usr/include/eigen3
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+  /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+  /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+  CMakeLists.txt:30 (ament_auto_find_build_dependencies)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /usr
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+  /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+  /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+  CMakeLists.txt:30 (ament_auto_find_build_dependencies)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:31 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[0m/usr/include/apr-1.0[0m
+[0mapr-1[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lddc.h:32[m[K,
+                 from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lddc.cpp:25[m[K:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lddc.cpp:[m[K In member function ‘[01m[Kstd::shared_ptr<rclcpp::PublisherBase> livox_ros::Lddc::CreatePublisher(uint8_t, std::string&, uint32_t)[m[K’:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lddc.cpp:599:11:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  599 |           [01;35m[K"%s publish use livox custom format"[m[K, topic_name);
+      |           [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lddc.cpp:599:13:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  599 |           "[01;36m[K%s[m[K publish use livox custom format", topic_name);
+      |            [01;36m[K~^[m[K
+      |             [01;36m[K|[m[K
+      |             [01;36m[Kchar*[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds.cpp:[m[K In static member function ‘[01m[Kstatic void livox_ros::Lds::ResetLidar(livox_ros::LidarDevice*, uint8_t)[m[K’:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds.cpp:567:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memset(void*, int, size_t)[m[K’ clearing an object of non-trivial type ‘[01m[Kstruct livox_ros::LidarDevice[m[K’; use assignment or value-initialization instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+  567 |   [01;35m[Kmemset(lidar, 0, sizeof(LidarDevice))[m[K;
+      |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds.cpp:25[m[K:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros2_driver/livox_ros2_driver/livox_ros2_driver/lds.h:166:16:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct livox_ros::LidarDevice[m[K’ declared here
+  166 | typedef struct [01;36m[K{[m[K
+      |                [01;36m[K^[m[K

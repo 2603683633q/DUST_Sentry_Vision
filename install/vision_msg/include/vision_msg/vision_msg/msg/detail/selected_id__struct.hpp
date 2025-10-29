@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/vision_msg/rosidl_generator_cpp/vision_msg/msg/detail/selected_id__struct.hpp

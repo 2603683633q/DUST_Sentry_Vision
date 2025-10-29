@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0b7ead40080d067bce06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "icp_registration",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "icp_registration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-icp_registration-c549d6001c34fd2191ed.json",
+					"name" : "icp_registration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "icp_registration_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-icp_registration_node-95bd13b403b0998a66dc.json",
+					"name" : "icp_registration_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "icp_registration_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-icp_registration_uninstall-ce9c6e9430784b182aa5.json",
+					"name" : "icp_registration_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b9022baf99c8790fbe4f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rmsentry/DUST-RM-Sentry/build/icp_registration",
+		"source" : "/home/rmsentry/DUST-RM-Sentry/src/rm_localization/icp_registration"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

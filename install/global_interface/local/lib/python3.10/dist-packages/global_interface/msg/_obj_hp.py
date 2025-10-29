@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/build/global_interface/rosidl_generator_py/global_interface/msg/_obj_hp.py

@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from global_interface/msg/Autoaim.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Quaternion.idl"
+#include "global_interface/msg/Point2f.idl"
+#include "std_msgs/msg/Header.idl"
+
+module global_interface {
+  module msg {
+    typedef global_interface::msg::Point2f global_interface__msg__Point2f;
+    typedef global_interface__msg__Point2f global_interface__msg__Point2f__4[4];
+    struct Autoaim {
+      std_msgs::msg::Header header;
+
+      uint8 mode;
+
+      string key;
+
+      uint16 hp;
+
+      double period;
+
+      double bullet_speed;
+
+      int64 timestamp;
+
+      global_interface__msg__Point2f__4 point2d;
+
+      @verbatim (language="comment", text=
+        "float64 w")
+      boolean clockwise;
+
+      boolean is_spinning;
+
+      boolean is_controlled;
+
+      boolean is_target_lost;
+
+      boolean target_switched;
+
+      boolean spinning_switched;
+
+      boolean is_still_spinning;
+
+      geometry_msgs::msg::Quaternion quat_imu;
+
+      geometry_msgs::msg::Point aiming_point_world;
+
+      geometry_msgs::msg::Point aiming_point_cam;
+    };
+  };
+};

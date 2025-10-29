@@ -1,0 +1,1 @@
+/home/rmsentry/DUST-RM-Sentry/src/rm_localization/fast_lio/msg/Pose6D.msg

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-841e34938d092ae3946a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hik_camera_second",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera_second::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera_second-679ec6eaac1039fc0195.json",
+					"name" : "hik_camera_second",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera_second_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera_second_node-4ae3bcfde741d0facceb.json",
+					"name" : "hik_camera_second_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera_second_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera_second_uninstall-798098efaaf1e49d0ab3.json",
+					"name" : "hik_camera_second_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2c7c676eeff5bf08dbef.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rmsentry/DUST-RM-Sentry/build/hik_camera_second",
+		"source" : "/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/ros2-hik-camera_second"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-eb3c7280999bf0b8b5fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hik_camera_first",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera_first::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera_first-6853764a679d3b21511e.json",
+					"name" : "hik_camera_first",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera_first_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera_first_node-93b06bc8035bfd5d6b41.json",
+					"name" : "hik_camera_first_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hik_camera_first_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hik_camera_first_uninstall-7ce8373aa058b04ce2c4.json",
+					"name" : "hik_camera_first_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0622e4329b4d782444b6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rmsentry/DUST-RM-Sentry/build/hik_camera_first",
+		"source" : "/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/ros2-hik-camera_first"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

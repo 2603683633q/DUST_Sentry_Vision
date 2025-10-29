@@ -1,0 +1,11 @@
+from global_interface.msg._autoaim import Autoaim  # noqa: F401
+from global_interface.msg._car_pos import CarPos  # noqa: F401
+from global_interface.msg._decision import Decision  # noqa: F401
+from global_interface.msg._detection import Detection  # noqa: F401
+from global_interface.msg._detection_array import DetectionArray  # noqa: F401
+from global_interface.msg._game_info import GameInfo  # noqa: F401
+from global_interface.msg._mode_set import ModeSet  # noqa: F401
+from global_interface.msg._obj_hp import ObjHP  # noqa: F401
+from global_interface.msg._point2f import Point2f  # noqa: F401
+from global_interface.msg._serial import Serial  # noqa: F401
+from global_interface.msg._strike_licensing import StrikeLicensing  # noqa: F401

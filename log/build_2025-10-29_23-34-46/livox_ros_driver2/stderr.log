@@ -1,0 +1,102 @@
+[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable EIGEN_ROOT is set to:
+
+    /usr/include/eigen3
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+  /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+  /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+  CMakeLists.txt:40 (ament_auto_find_build_dependencies)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /usr
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+  /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+  /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+  CMakeLists.txt:40 (ament_auto_find_build_dependencies)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[0m/usr/include/apr-1.0[0m
+[0mapr-1[0m
+[33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:56 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:56 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:56 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[0m/usr/local/lib/liblivox_lidar_sdk_shared.so[0m
+In file included from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/driver_node.h:28[m[K,
+                 from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/driver_node.cpp:25[m[K:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/include/ros_headers.h:28:[m[K [01;35m[Kwarning: [m[K"BUILDING_ROS2" redefined
+   28 | #define BUILDING_ROS2
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+In file included from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/driver_node.h:28[m[K,
+                 from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/lddc.h:31[m[K,
+                 from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/lddc.cpp:25[m[K:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/include/ros_headers.h:28:[m[K [01;35m[Kwarning: [m[K"BUILDING_ROS2" redefined
+   28 | #define BUILDING_ROS2
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+In file included from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/driver_node.h:28[m[K,
+                 from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/livox_ros_driver2.cpp:32[m[K:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/include/ros_headers.h:28:[m[K [01;35m[Kwarning: [m[K"BUILDING_ROS2" redefined
+   28 | #define BUILDING_ROS2
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+In file included from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/lds_lidar.cpp:47[m[K:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/livox_ros_driver2/src/comm/pub_handler.h:44:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Klivox_ros::extrinsic_global[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   44 | static ExtParameterDetailed [01;35m[Kextrinsic_global[m[K = {
+      |                             [01;35m[K^~~~~~~~~~~~~~~~[m[K

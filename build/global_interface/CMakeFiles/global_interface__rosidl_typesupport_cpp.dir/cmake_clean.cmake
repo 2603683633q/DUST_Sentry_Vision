@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/autoaim__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/autoaim__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/car_pos__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/car_pos__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/decision__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/decision__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/detection__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/detection__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/detection_array__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/detection_array__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/game_info__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/game_info__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/mode_set__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/mode_set__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/obj_hp__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/obj_hp__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/point2f__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/point2f__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/serial__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/serial__type_support.cpp.o.d"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/strike_licensing__type_support.cpp.o"
+  "CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/global_interface/msg/strike_licensing__type_support.cpp.o.d"
+  "libglobal_interface__rosidl_typesupport_cpp.pdb"
+  "libglobal_interface__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/global_interface/msg/autoaim__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/car_pos__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/decision__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/detection__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/detection_array__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/game_info__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/mode_set__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/obj_hp__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/point2f__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/serial__type_support.cpp"
+  "rosidl_typesupport_cpp/global_interface/msg/strike_licensing__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/global_interface__rosidl_typesupport_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
