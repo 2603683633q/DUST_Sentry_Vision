@@ -19,7 +19,7 @@ virtual_serial: false
 hero_solver: false
 # true: 开启打符 false：关闭打符
 rune: false
-camera: "hik"   # 或 "mv"
-
+camera_0: true   
+camera_1: true  
 
 

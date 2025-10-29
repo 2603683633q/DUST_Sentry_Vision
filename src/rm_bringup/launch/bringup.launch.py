@@ -35,20 +35,19 @@ def generate_launch_description():
         get_package_share_directory('rm_bringup'), 'config', 'node_params.yaml')
 
     # image
-    if launch_params['camera'] == 'hik':
-        image_node = ComposableNode(
-            package='hik_camera',
-            plugin='hik_camera::HikCameraNode',
-            name='hik_camera',
+    if launch_params['camera_0']:
+        image_node_0 = ComposableNode(
+            package='hik_camera_first',          # 第二个相机用 hik_camera_second 包
+            plugin='hik_camera::HikCameraNode',   # 插件类名不变
+            name='hik_camera_0',                  # 节点名区分为 _1
             parameters=[node_params],
             extra_arguments=[{'use_intra_process_comms': True}],
-    )
-
-    else:
-        image_node = ComposableNode(
-            package='hik_camera',
-            plugin='hik_camera::HikCameraNode',
-            name='hik_camera',
+        )
+    if launch_params['camera_1']:
+        image_node_1 = ComposableNode(
+            package='hik_camera_second',          # 第二个相机用 hik_camera_second 包
+            plugin='hik_camera::HikCameraNode',   # 插件类名不变
+            name='hik_camera_1',                  # 节点名区分为 _1
             parameters=[node_params],
             extra_arguments=[{'use_intra_process_comms': True}],
         )
@@ -65,7 +64,10 @@ def generate_launch_description():
     # 使用intra cmmunication提高图像的传输速度
     def get_camera_detector_container(*detector_nodes):
         nodes_list = list(detector_nodes)
-        nodes_list.append(image_node)
+        if launch_params['camera_0'] is not False:
+            nodes_list.append(image_node_0)
+        if launch_params['camera_1'] is not False:
+            nodes_list.append(image_node_1)
         container = ComposableNodeContainer(
             name='camera_detector_container',
             namespace='',
