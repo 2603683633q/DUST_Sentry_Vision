@@ -21,19 +21,19 @@ def generate_launch_description():
         DeclareLaunchArgument(name='use_sensor_data_qos',
                               default_value='false'),
 
+        # Node(
+        #     package='hik_camera',
+        #     executable='hik_camera_node',
+        #     output='screen',
+        #     emulate_tty=True,
+        #     parameters=[LaunchConfiguration('params_file'), {
+        #         'camera_info_url': LaunchConfiguration('camera_info_url'),
+        #         'use_sensor_data_qos': LaunchConfiguration('use_sensor_data_qos'),
+        #     }],
+        # ),
         Node(
-            package='hik_camera',
-            executable='hik_camera_node',
-            output='screen',
-            emulate_tty=True,
-            parameters=[LaunchConfiguration('params_file'), {
-                'camera_info_url': LaunchConfiguration('camera_info_url'),
-                'use_sensor_data_qos': LaunchConfiguration('use_sensor_data_qos'),
-            }],
-        ),
-        Node(
-            package='hik_camera_second',
-            executable='hik_camera_second_node',
+            package='hik_camera_first',
+            executable='hik_camera_first_node',
             output='screen',
             emulate_tty=True,
             parameters=[LaunchConfiguration('params_file'), {
