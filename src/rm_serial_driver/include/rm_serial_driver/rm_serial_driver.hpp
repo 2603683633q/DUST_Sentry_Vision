@@ -63,8 +63,9 @@ private:
   using ResultFuturePtr = std::shared_future<std::vector<rcl_interfaces::msg::SetParametersResult>>;
   bool initial_set_param_ = false;
   uint8_t previous_receive_color_ = 0;
-  rclcpp::AsyncParametersClient::SharedPtr detector_param_client_;
-  ResultFuturePtr set_param_future_;
+  // Support multiple detector nodes (e.g., first/second pipelines)
+  std::vector<std::string> detector_nodes_;
+  std::vector<rclcpp::AsyncParametersClient::SharedPtr> detector_param_clients_;
 
   // Service client to reset tracker
   rclcpp::Client<std_srvs::srv::Trigger>::SharedPtr reset_tracker_client_;

@@ -49,8 +49,13 @@ RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions & options)
 
   // site_pub = this->create_publisher<decision_moudle::msg::Site>("/incident", 10);
   // health_pub = this->create_publisher<decision_moudle::msg::Hp>("/allhealth", 10);
-  // Detect parameter client
-  detector_param_client_ = std::make_shared<rclcpp::AsyncParametersClient>(this, "armor_detector");
+  // Detect parameter clients (support multiple detector nodes)
+  // You can configure detector node names via parameter 'detector_nodes'
+  detector_nodes_ = this->declare_parameter<std::vector<std::string>>(
+      "detector_nodes", std::vector<std::string>{"armor_detector_first", "armor_detector_second", "armor_detector"});
+  for (const auto & name : detector_nodes_) {
+    detector_param_clients_.emplace_back(std::make_shared<rclcpp::AsyncParametersClient>(this, name));
+  }
 
   // Tracker reset service client
   reset_tracker_client_ = this->create_client<std_srvs::srv::Trigger>("/tracker/reset");
@@ -192,7 +197,7 @@ packet.reserved2 = *reinterpret_cast<uint16_t*>(&data[14]);
 // printf("\n");
 
 bool crc_ok = crc16::Verify_CRC16_Check_Sum(data.data(), data.size());
- printf("CRC check: %s\n", crc_ok ? "PASS" : "FAIL");
+//  printf("CRC check: %s\n", crc_ok ? "PASS" : "FAIL");
         if (crc_ok) {
           if (!initial_set_param_ || packet.detect_color != previous_receive_color_) {
             setParam(rclcpp::Parameter("detect_color", packet.detect_color));
@@ -208,8 +213,8 @@ bool crc_ok = crc16::Verify_CRC16_Check_Sum(data.data(), data.size());
           // packet.roll = packet.roll * (180.0 / M_PI);
           // packet.pitch = packet.pitch *(180.0 / M_PI);
           // packet.yaw = packet.yaw * (180.0 / M_PI);  
-  printf("packet.pitch = %f\n", packet.pitch);
-  printf("packet.yaw = %f\n", packet.yaw);
+  // printf("packet.pitch = %f\n", packet.pitch);
+  // printf("packet.yaw = %f\n", packet.yaw);
           geometry_msgs::msg::TransformStamped t;
           timestamp_offset_ = this->get_parameter("timestamp_offset").as_double();
           t.header.stamp = this->now();
@@ -396,26 +401,31 @@ void RMSerialDriver::reopenPort()
 
 void RMSerialDriver::setParam(const rclcpp::Parameter & param)
 {
-  if (!detector_param_client_->service_is_ready()) {
-    RCLCPP_WARN(get_logger(), "Service not ready, skipping parameter set");
-    return;
-  }
-
-  if (
-    !set_param_future_.valid() ||
-    set_param_future_.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {
-    RCLCPP_INFO(get_logger(), "Setting detect_color to %ld...", param.as_int());
-    set_param_future_ = detector_param_client_->set_parameters(
-      {param}, [this, param](const ResultFuturePtr & results) {
+  bool any_ready = false;
+  for (size_t i = 0; i < detector_param_clients_.size(); ++i) {
+    auto & client = detector_param_clients_[i];
+    const auto & target_name = detector_nodes_[i];
+    if (!client->service_is_ready()) {
+      RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 2000, "Param service for %s not ready, skip", target_name.c_str());
+      continue;
+    }
+    any_ready = true;
+    RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 5000, "Setting %s:%s to %ld...", target_name.c_str(), param.get_name().c_str(), param.as_int());
+    // Fire-and-forget async set; log result per target
+    client->set_parameters(
+      {param}, [this, target_name, param](const ResultFuturePtr & results) {
         for (const auto & result : results.get()) {
           if (!result.successful) {
-            RCLCPP_ERROR(get_logger(), "Failed to set parameter: %s", result.reason.c_str());
+            RCLCPP_ERROR(get_logger(), "Failed to set %s on %s: %s", param.get_name().c_str(), target_name.c_str(), result.reason.c_str());
             return;
           }
         }
-        RCLCPP_INFO(get_logger(), "Successfully set detect_color to %ld!", param.as_int());
+        RCLCPP_INFO(get_logger(), "Set %s on %s to %ld", param.get_name().c_str(), target_name.c_str(), param.as_int());
         initial_set_param_ = true;
       });
+  }
+  if (!any_ready) {
+    RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 2000, "No detector param services ready; skipping parameter set");
   }
 }
 
