@@ -37,10 +37,12 @@ def generate_launch_description():
             'armors_topic': '/detector_first/armors'
         }],
         remappings=[
+            ('/camera_info', '/image_raw_first/camera_info'),
             ('/detector/result_img', '/detector/result_img_first'),
             ('/detector/binary_img', '/detector/binary_img_first'),
             ('/detector/number_img', '/detector/number_img_first'),
             ('/detector/debug_armors', '/detector/debug_armors_first'),
+            ('/detector/debug_lights', '/detector/debug_lights_first'),
             ('/detector/marker', '/detector/marker_first'),
         ],
         extra_arguments=[{'use_intra_process_comms': True}],
@@ -75,10 +77,12 @@ def generate_launch_description():
             'armors_topic': '/detector_second/armors'
         }],
         remappings=[
+            ('/camera_info', '/image_raw_second/camera_info'),
             ('/detector/result_img', '/detector/result_img_second'),
             ('/detector/binary_img', '/detector/binary_img_second'),
             ('/detector/number_img', '/detector/number_img_second'),
             ('/detector/debug_armors', '/detector/debug_armors_second'),
+            ('/detector/debug_lights', '/detector/debug_lights_second'),
             ('/detector/marker', '/detector/marker_second'),
         ],
         extra_arguments=[{'use_intra_process_comms': True}],
