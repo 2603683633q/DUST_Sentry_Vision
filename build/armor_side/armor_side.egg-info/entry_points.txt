@@ -1,0 +1,3 @@
+[console_scripts]
+armor_side_node = armor_side.armor_side_node:main
+

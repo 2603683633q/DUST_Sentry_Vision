@@ -1,0 +1,40 @@
+[0.055s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/hik_camera_second': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/hik_camera_second -- -j12 -l12
+[0.232s] [ 25%] [32mBuilding CXX object CMakeFiles/hik_camera_second.dir/src/hik_camera_second_node.cpp.o[0m
+[0.238s] [ 75%] Built target hik_camera_second_node
+[3.592s] [100%] [32m[1mLinking CXX shared library libhik_camera_second.so[0m
+[3.697s] [100%] Built target hik_camera_second
+[3.704s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/hik_camera_second' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/hik_camera_second -- -j12 -l12
+[3.705s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/hik_camera_second': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/hik_camera_second
+[3.708s] -- Install configuration: ""
+[3.708s] -- Execute custom install script
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib/libFormatConversion.so
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib/libMVRender.so
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib/libMediaProcess.so
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib/libMvCameraControl.so
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib/libMvUsb3vTL.so
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib/hik_camera_second/hik_camera_second_node
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/environment/library_path.sh
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/environment/library_path.dsv
+[3.709s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib/libhik_camera_second.so
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/config/camera_info.yaml
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/config/camera_params.yaml
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/launch/hik_camera.launch.py
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/ament_index/resource_index/package_run_dependencies/hik_camera_second
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/ament_index/resource_index/parent_prefix_path/hik_camera_second
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/environment/ament_prefix_path.sh
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/environment/ament_prefix_path.dsv
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/environment/path.sh
+[3.710s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/environment/path.dsv
+[3.711s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/local_setup.bash
+[3.711s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/local_setup.sh
+[3.711s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/local_setup.zsh
+[3.711s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/local_setup.dsv
+[3.711s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/package.dsv
+[3.715s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/ament_index/resource_index/packages/hik_camera_second
+[3.716s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/ament_index/resource_index/rclcpp_components/hik_camera_second
+[3.716s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.716s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/cmake/ament_cmake_export_libraries-extras.cmake
+[3.716s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/cmake/hik_camera_secondConfig.cmake
+[3.716s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/cmake/hik_camera_secondConfig-version.cmake
+[3.716s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/share/hik_camera_second/package.xml
+[3.720s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/hik_camera_second' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/hik_camera_second

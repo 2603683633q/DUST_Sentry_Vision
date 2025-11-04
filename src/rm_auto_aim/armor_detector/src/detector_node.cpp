@@ -28,6 +28,9 @@
 #include <rclcpp/duration.hpp>
 #include <rclcpp/qos.hpp>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include <message_filters/subscriber.h>
+#include <message_filters/synchronizer.h>
+#include <message_filters/sync_policies/approximate_time.h>
 
 // STD
 #include <algorithm>
@@ -54,9 +57,10 @@ ArmorDetectorNode::ArmorDetectorNode(const rclcpp::NodeOptions & options)
   // Tricks to make pose more accurate
   use_ba_ = this->declare_parameter("use_ba", true);
 
-  // Armors Publisher
+  // Armors Publisher (configurable so two processes can publish different topics)
+  armors_topic_ = this->declare_parameter("armors_topic", std::string("/detector/armors"));
   armors_pub_ = this->create_publisher<auto_aim_interfaces::msg::Armors>(
-    "/detector/armors", rclcpp::SensorDataQoS());
+    armors_topic_, rclcpp::SensorDataQoS());
 
   // Transform initialize
   odom_frame_ = this->declare_parameter("target_frame", "odom");
@@ -111,9 +115,25 @@ ArmorDetectorNode::ArmorDetectorNode(const rclcpp::NodeOptions & options)
       cam_info_sub_.reset();
     });
 
-  img_sub_ = this->create_subscription<sensor_msgs::msg::Image>(
-    "/image_raw_first", rclcpp::SensorDataQoS(),
-    std::bind(&ArmorDetectorNode::imageCallback, this, std::placeholders::_1));
+  // Decide single or dual camera mode
+  dual_camera_ = this->declare_parameter("dual_camera", false);
+  image_topic_first_ = this->declare_parameter("image_topic_first", std::string("/image_raw_first"));
+  image_topic_second_ = this->declare_parameter("image_topic_second", std::string("/image_raw_second"));
+  auto qos = rclcpp::SensorDataQoS();
+  if (dual_camera_) {
+    // Dual camera subscriptions using message_filters for time synchronization
+    img_sub_first_ = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::Image>>(this, image_topic_first_, qos.get_rmw_qos_profile());
+    img_sub_second_ = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::Image>>(this, image_topic_second_, qos.get_rmw_qos_profile());
+    img_sync_ = std::make_shared<message_filters::Synchronizer<ImageSyncPolicy>>(ImageSyncPolicy(10), *img_sub_first_, *img_sub_second_);
+    img_sync_->registerCallback(
+      std::bind(&ArmorDetectorNode::imageCallback, this, std::placeholders::_1, std::placeholders::_2));
+  } else {
+    // Single camera mode: subscribe to configurable topic so you can run two processes with different topics
+    img_sub_single_ = this->create_subscription<sensor_msgs::msg::Image>(
+      image_topic_first_, rclcpp::SensorDataQoS(),
+      std::bind(&ArmorDetectorNode::imageCallbackSingle, this, std::placeholders::_1));
+  }
+
 
   tf2_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
   auto timer_interface = std::make_shared<tf2_ros::CreateTimerROS>(
@@ -125,13 +145,15 @@ ArmorDetectorNode::ArmorDetectorNode(const rclcpp::NodeOptions & options)
   R_gimbal_camera_ << 0, 0, 1, -1, 0, 0, 0, -1, 0;
 }
 
-void ArmorDetectorNode::imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr img_msg)
-{ 
+void ArmorDetectorNode::imageCallback(
+  const sensor_msgs::msg::Image::ConstSharedPtr img_msg_first,
+  const sensor_msgs::msg::Image::ConstSharedPtr img_msg_second)
+{
   // Get the transform from odom to gimbal
 try {
-  rclcpp::Time target_time = img_msg->header.stamp;
+  rclcpp::Time target_time = img_msg_first->header.stamp;
   auto odom_to_gimbal = tf2_buffer_->lookupTransform(
-      odom_frame_, img_msg->header.frame_id, rclcpp::Time(0),
+      odom_frame_, img_msg_first->header.frame_id, rclcpp::Time(0),
       rclcpp::Duration::from_seconds(0.1));
 
   auto msg_q = odom_to_gimbal.transform.rotation;
@@ -147,7 +169,110 @@ try {
   RCLCPP_WARN(this->get_logger(), "Failed to get odom to gimbal transform: %s", ex.what());
   return;
 }
+  // 检测装甲板（对两路图像分别检测并合并结果）
+  auto armors_first = detectArmors(img_msg_first);
+  auto armors_second = detectArmors(img_msg_second);
+  std::vector<Armor> armors;
+  armors.reserve(armors_first.size() + armors_second.size());
+  armors.insert(armors.end(), armors_first.begin(), armors_first.end());
+  armors.insert(armors.end(), armors_second.begin(), armors_second.end());
 
+  if (pnp_solver_ != nullptr) {
+    // Use the first image header for published messages
+    armors_msg_.header = armor_marker_.header = text_marker_.header = img_msg_first->header;
+    armors_msg_.armors.clear();
+    marker_array_.markers.clear();
+    armor_marker_.id = 0;
+    text_marker_.id = 0;
+
+    auto_aim_interfaces::msg::Armor armor_msg;
+    for (const auto & armor : armors) {
+      std::vector<cv::Mat> rvecs, tvecs;
+      if (pnp_solver_->solvePnP(armor, rvecs, tvecs)) {
+
+        // 从PnP solver中得到两个解，选择最优解
+        sortPnPResult(armor, rvecs, tvecs);
+
+        // 检查roll角是否正常，否则进行优化
+        cv::Mat rmat;
+        cv::Rodrigues(rvecs[0], rmat);
+
+        Eigen::Matrix3d R = utils::cvToEigen(rmat);
+        Eigen::Vector3d t = utils::cvToEigen(tvecs[0]);
+
+        double armor_roll = (rotationMatrixToRPY(R_gimbal_camera_ * R)[0] * 180 / M_PI);
+        // RCLCPP_INFO(this->get_logger(), "armor_roll: %f", armor_roll);
+        if(use_ba_ &&  armor_roll < 15){
+          R = ba_optimizer_->solveBa(armor, t, R, imu_to_camera_);
+        }
+        Eigen::Quaterniond q(R);
+
+        // Fill basic info
+        armor_msg.type = ARMOR_TYPE_STR[static_cast<int>(armor.type)];
+        armor_msg.number = armor.number;
+
+        // Fill pose
+        armor_msg.pose.position.x = t(0);
+        armor_msg.pose.position.y = t(1);
+        armor_msg.pose.position.z = t(2);
+        armor_msg.pose.orientation.x = q.x();
+        armor_msg.pose.orientation.y = q.y();
+        armor_msg.pose.orientation.z = q.z();
+        armor_msg.pose.orientation.w = q.w();
+
+        // Fill the distance to image center
+        armor_msg.distance_to_image_center = pnp_solver_->calculateDistanceToCenter(armor.center);
+
+        // Fill the markers
+        armor_marker_.id++;
+        armor_marker_.scale.y = armor.type == ArmorType::SMALL ? 0.135 : 0.23;
+        armor_marker_.pose = armor_msg.pose;
+        text_marker_.id++;
+        text_marker_.pose.position = armor_msg.pose.position;
+        text_marker_.pose.position.y -= 0.1;
+        text_marker_.text = armor.classfication_result;
+        armors_msg_.armors.emplace_back(armor_msg);
+        marker_array_.markers.emplace_back(armor_marker_);
+        marker_array_.markers.emplace_back(text_marker_);
+      } else {
+        RCLCPP_WARN(this->get_logger(), "PnP failed!");
+      }
+    }
+
+    // Publishing detected armors
+    armors_pub_->publish(armors_msg_);
+
+    // Publishing marker
+    publishMarkers();
+  }
+  else{
+    RCLCPP_WARN(this->get_logger(), "PnP is null!");
+  }
+
+}
+// Single-image callback implementation for single-camera mode
+void ArmorDetectorNode::imageCallbackSingle(const sensor_msgs::msg::Image::ConstSharedPtr img_msg)
+{
+  // Get the transform from odom to gimbal
+  try {
+    rclcpp::Time target_time = img_msg->header.stamp;
+    auto odom_to_gimbal = tf2_buffer_->lookupTransform(
+        odom_frame_, img_msg->header.frame_id, rclcpp::Time(0),
+        rclcpp::Duration::from_seconds(0.1));
+
+    auto msg_q = odom_to_gimbal.transform.rotation;
+    tf2::Quaternion tf_q;
+    tf2::fromMsg(msg_q, tf_q);
+    tf2::Matrix3x3 tf2_matrix = tf2::Matrix3x3(tf_q);
+    imu_to_camera_ << tf2_matrix.getRow(0)[0], tf2_matrix.getRow(0)[1],
+        tf2_matrix.getRow(0)[2], tf2_matrix.getRow(1)[0],
+        tf2_matrix.getRow(1)[1], tf2_matrix.getRow(1)[2],
+        tf2_matrix.getRow(2)[0], tf2_matrix.getRow(2)[1],
+        tf2_matrix.getRow(2)[2];
+  } catch (const tf2::TransformException& ex) {
+    RCLCPP_WARN(this->get_logger(), "Failed to get odom to gimbal transform: %s", ex.what());
+    return;
+  }
 
   // 检测装甲板
   auto armors = detectArmors(img_msg);
@@ -175,7 +300,6 @@ try {
         Eigen::Vector3d t = utils::cvToEigen(tvecs[0]);
 
         double armor_roll = (rotationMatrixToRPY(R_gimbal_camera_ * R)[0] * 180 / M_PI);
-        // RCLCPP_INFO(this->get_logger(), "armor_roll: %f", armor_roll);
         if(use_ba_ &&  armor_roll < 15){
           R = ba_optimizer_->solveBa(armor, t, R, imu_to_camera_);
         }

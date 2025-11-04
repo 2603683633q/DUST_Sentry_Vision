@@ -1,0 +1,45 @@
+[0.025s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/rm_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/rm_navigation -- -j12 -l12
+[1.426s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.426s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.426s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.426s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.426s] -- Added test 'lint_cmake' to check CMake code style
+[1.426s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.426s] -- Added test 'xmllint' to check XML markup files
+[1.426s] -- Configuring done (0.5s)
+[1.426s] -- Generating done (0.0s)
+[1.426s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/rm_navigation
+[1.431s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/rm_navigation -- -j12 -l12
+[1.432s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/rm_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/rm_navigation
+[1.463s] -- Install configuration: ""
+[1.463s] -- Execute custom install script
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/params/mapper_params_online_async.yaml
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/params/nav2_params.yaml
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/launch/bringup_launch.py
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/launch/bringup_no_amcl_launch.py
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/launch/localization_launch.py
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/launch/navigation_launch.py
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/launch/online_async_launch.py
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/launch/rviz_launch.py
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/launch/slam_launch.py
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/map/RMUL.pgm
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/map/RMUL.yaml
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/map/map.pgm
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/map/map.yaml
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/rviz/nav2_default_view.rviz
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/ament_index/resource_index/package_run_dependencies/rm_navigation
+[1.463s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/ament_index/resource_index/parent_prefix_path/rm_navigation
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/environment/ament_prefix_path.sh
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/environment/ament_prefix_path.dsv
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/environment/path.sh
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/environment/path.dsv
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/local_setup.bash
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/local_setup.sh
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/local_setup.zsh
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/local_setup.dsv
+[1.464s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/package.dsv
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/ament_index/resource_index/packages/rm_navigation
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/cmake/rm_navigationConfig.cmake
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/cmake/rm_navigationConfig-version.cmake
+[1.464s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/rm_navigation/share/rm_navigation/package.xml
+[1.511s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/rm_navigation

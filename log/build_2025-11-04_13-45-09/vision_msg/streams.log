@@ -1,0 +1,215 @@
+[0.041s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/vision_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/vision_msg -- -j12 -l12
+[0.121s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.293s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.299s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.307s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.311s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.366s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.393s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.425s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.002s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.592s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.275s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.277s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[2.277s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.277s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.277s]   the cmake_policy command to set the policy and suppress this warning.
+[2.277s] 
+[2.277s] Call Stack (most recent call first):
+[2.277s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.277s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.277s]   CMakeLists.txt:37 (rosidl_generate_interfaces)
+[2.277s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.277s] [0m
+[2.302s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[2.302s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.302s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.302s]   the cmake_policy command to set the policy and suppress this warning.
+[2.302s] 
+[2.302s] Call Stack (most recent call first):
+[2.302s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.302s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.302s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.302s]   CMakeLists.txt:37 (rosidl_generate_interfaces)
+[2.302s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.302s] [0m
+[2.303s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.324s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[2.324s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.324s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.324s]   the cmake_policy command to set the policy and suppress this warning.
+[2.324s] 
+[2.324s] Call Stack (most recent call first):
+[2.324s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.324s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.324s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.324s]   CMakeLists.txt:37 (rosidl_generate_interfaces)
+[2.324s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.324s] [0m
+[2.325s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.325s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.325s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.383s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.384s] -- Added test 'lint_cmake' to check CMake code style
+[2.385s] -- Added test 'xmllint' to check XML markup files
+[2.389s] -- Configuring done (2.3s)
+[2.415s] -- Generating done (0.0s)
+[2.425s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/vision_msg
+[2.450s] [  2%] Built target vision_msg__cpp
+[2.465s] [ 12%] Built target vision_msg__rosidl_generator_c
+[2.467s] [ 12%] Built target ament_cmake_python_symlink_vision_msg
+[2.484s] [ 23%] Built target vision_msg__rosidl_typesupport_cpp
+[2.492s] [ 34%] Built target vision_msg__rosidl_typesupport_introspection_cpp
+[2.494s] [ 44%] Built target vision_msg__rosidl_typesupport_fastrtps_cpp
+[2.494s] [ 55%] Built target vision_msg__rosidl_typesupport_introspection_c
+[2.494s] [ 65%] Built target vision_msg__rosidl_typesupport_c
+[2.504s] [ 76%] Built target vision_msg__rosidl_typesupport_fastrtps_c
+[2.519s] [ 76%] Built target vision_msg
+[2.538s] [ 78%] Built target vision_msg__py
+[2.558s] [ 87%] Built target vision_msg__rosidl_generator_py
+[2.579s] [ 91%] Built target vision_msg__rosidl_typesupport_fastrtps_c__pyext
+[2.590s] [ 95%] Built target vision_msg__rosidl_typesupport_c__pyext
+[2.596s] [100%] Built target vision_msg__rosidl_typesupport_introspection_c__pyext
+[2.716s] running egg_info
+[2.720s] writing vision_msg.egg-info/PKG-INFO
+[2.720s] writing dependency_links to vision_msg.egg-info/dependency_links.txt
+[2.720s] writing top-level names to vision_msg.egg-info/top_level.txt
+[2.720s] reading manifest file 'vision_msg.egg-info/SOURCES.txt'
+[2.720s] writing manifest file 'vision_msg.egg-info/SOURCES.txt'
+[2.743s] [100%] Built target ament_cmake_python_build_vision_msg_egg
+[2.750s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/vision_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/vision_msg -- -j12 -l12
+[2.754s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/vision_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/vision_msg
+[3.341s] -- Install configuration: ""
+[3.341s] -- Execute custom install script
+[3.341s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/ament_index/resource_index/rosidl_interfaces/vision_msg
+[3.341s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__functions.h
+[3.341s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__struct.h
+[3.341s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__type_support.h
+[3.341s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__functions.h
+[3.341s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__struct.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__type_support.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__functions.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__struct.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__type_support.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detected_id.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/gimble_position.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_generator_c__visibility_control.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/selected_id.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/environment/library_path.sh
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/environment/library_path.dsv
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__rosidl_typesupport_fastrtps_c.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__rosidl_typesupport_fastrtps_c.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__rosidl_typesupport_fastrtps_c.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__rosidl_typesupport_introspection_c.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__rosidl_typesupport_introspection_c.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__rosidl_typesupport_introspection_c.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.342s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__builder.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__struct.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__traits.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__type_support.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__builder.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__struct.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__traits.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__type_support.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__builder.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__struct.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__traits.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__type_support.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detected_id.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/gimble_position.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/selected_id.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__rosidl_typesupport_fastrtps_cpp.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__rosidl_typesupport_fastrtps_cpp.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__rosidl_typesupport_fastrtps_cpp.hpp
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.343s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/detected_id__rosidl_typesupport_introspection_cpp.hpp
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/gimble_position__rosidl_typesupport_introspection_cpp.hpp
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/include/vision_msg/vision_msg/msg/detail/selected_id__rosidl_typesupport_introspection_cpp.hpp
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/environment/pythonpath.sh
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/environment/pythonpath.dsv
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info/PKG-INFO
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg-0.0.0-py3.10.egg-info/top_level.txt
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/__init__.py
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/_vision_msg_s.ep.rosidl_typesupport_c.c
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/_vision_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.344s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/_vision_msg_s.ep.rosidl_typesupport_introspection_c.c
+[3.345s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/libvision_msg__rosidl_generator_py.so
+[3.345s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/__init__.py
+[3.345s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_detected_id.py
+[3.345s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_detected_id_s.c
+[3.345s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_gimble_position.py
+[3.345s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_gimble_position_s.c
+[3.345s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_selected_id.py
+[3.345s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_selected_id_s.c
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/vision_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/msg/GimblePosition.idl
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/msg/DetectedId.idl
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/msg/SelectedId.idl
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/msg/GimblePosition.msg
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/msg/DetectedId.msg
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/msg/SelectedId.msg
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/ament_index/resource_index/package_run_dependencies/vision_msg
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/ament_index/resource_index/parent_prefix_path/vision_msg
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/environment/ament_prefix_path.sh
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/environment/ament_prefix_path.dsv
+[3.346s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/environment/path.sh
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/environment/path.dsv
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/local_setup.bash
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/local_setup.sh
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/local_setup.zsh
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/local_setup.dsv
+[3.347s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/package.dsv
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/ament_index/resource_index/packages/vision_msg
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/rosidl_cmake-extras.cmake
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/ament_cmake_export_targets-extras.cmake
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.347s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.348s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msgConfig.cmake
+[3.348s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msgConfig-version.cmake
+[3.348s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/package.xml
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib/libvision_msg__rosidl_generator_c.so
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib/libvision_msg__rosidl_typesupport_fastrtps_c.so
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_c.so
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib/libvision_msg__rosidl_typesupport_c.so
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib/libvision_msg__rosidl_typesupport_fastrtps_cpp.so
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib/libvision_msg__rosidl_typesupport_introspection_cpp.so
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib/libvision_msg__rosidl_typesupport_cpp.so
+[3.348s] Listing '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg'...
+[3.348s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/__init__.py'...
+[3.348s] Listing '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg'...
+[3.348s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/__init__.py'...
+[3.348s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_detected_id.py'...
+[3.348s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_gimble_position.py'...
+[3.348s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages/vision_msg/msg/_selected_id.py'...
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib/libvision_msg__rosidl_generator_py.so
+[3.348s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_cExport.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_cExport-noconfig.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_introspection_cExport.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_cExport.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_cExport-noconfig.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_cppExport.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_introspection_cppExport.cmake
+[3.349s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.350s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_cppExport.cmake
+[3.350s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/vision_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[3.351s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_pyExport.cmake
+[3.351s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/vision_msg/share/vision_msg/cmake/export_vision_msg__rosidl_generator_pyExport-noconfig.cmake
+[3.356s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/vision_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/vision_msg

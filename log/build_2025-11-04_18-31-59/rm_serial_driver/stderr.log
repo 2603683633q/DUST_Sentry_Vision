@@ -1,0 +1,18 @@
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:[m[K In member function ‘[01m[Kvoid rm_serial_driver::RMSerialDriver::receiveData()[m[K’:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:145:14:[m[K [01;31m[Kerror: [m[Kunnecessary parentheses in declaration of ‘[01m[Kfreq[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Werror=parentheses]8;;[m[K]
+  145 |         void [01;31m[K(freq)[m[K;
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:145:14:[m[K [01;36m[Knote: [m[Kremove parentheses
+  145 |         void [01;36m[K(freq)[m[K;
+      |              [01;36m[K^~~~~~[m[K
+      |              [31m[K-[m[K    [31m[K-[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:145:15:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kfreq[m[K’ declared void
+  145 |         void ([01;31m[Kfreq[m[K);
+      |               [01;31m[K^~~~[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:144:16:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kfreq[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+  144 |         double [01;31m[Kfreq[m[K = (dt > 0) ? (1.0 / dt) : 0.0;
+      |                [01;31m[K^~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/rm_serial_driver.dir/build.make:76：CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/rm_serial_driver.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

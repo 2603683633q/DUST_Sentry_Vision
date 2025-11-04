@@ -893,3 +893,50 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/local/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/local/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:270 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:319 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:540 (find_external_library)"
+      - "/opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "/opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)"
+      - "CMakeLists.txt:30 (ament_auto_find_build_dependencies)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/rmsentry/DUST-RM-Sentry/build/livox_ros2_driver/CMakeFiles/CMakeScratch/TryCompile-3P2djr"
+      binary: "/home/rmsentry/DUST-RM-Sentry/build/livox_ros2_driver/CMakeFiles/CMakeScratch/TryCompile-3P2djr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/opt/ros/humble/share/fastrtps_cmake_module/cmake/Modules;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rmsentry/DUST-RM-Sentry/build/livox_ros2_driver/CMakeFiles/CMakeScratch/TryCompile-3P2djr'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_94d86/fast
+        gmake[1]: 进入目录“/home/rmsentry/DUST-RM-Sentry/build/livox_ros2_driver/CMakeFiles/CMakeScratch/TryCompile-3P2djr”
+        /usr/bin/gmake  -f CMakeFiles/cmTC_94d86.dir/build.make CMakeFiles/cmTC_94d86.dir/build
+        gmake[2]: 进入目录“/home/rmsentry/DUST-RM-Sentry/build/livox_ros2_driver/CMakeFiles/CMakeScratch/TryCompile-3P2djr”
+        Building C object CMakeFiles/cmTC_94d86.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu99 -o CMakeFiles/cmTC_94d86.dir/test_mpi.c.o -c /home/rmsentry/DUST-RM-Sentry/build/livox_ros2_driver/CMakeFiles/CMakeScratch/TryCompile-3P2djr/test_mpi.c
+        Linking C executable cmTC_94d86
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94d86.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_94d86.dir/test_mpi.c.o -o cmTC_94d86  /usr/lib/x86_64-linux-gnu/libmpi.so
+        gmake[2]: 离开目录“/home/rmsentry/DUST-RM-Sentry/build/livox_ros2_driver/CMakeFiles/CMakeScratch/TryCompile-3P2djr”
+        gmake[1]: 离开目录“/home/rmsentry/DUST-RM-Sentry/build/livox_ros2_driver/CMakeFiles/CMakeScratch/TryCompile-3P2djr”
+        
+      exitCode: 0
+...

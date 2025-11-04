@@ -1568,9 +1568,15 @@ CMakeFiles/armor_detector.dir/src/detector_node.cpp.o
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp
  /opt/ros/humble/include/message_filters/message_filters/connection.h
  /opt/ros/humble/include/message_filters/message_filters/message_event.h
+ /opt/ros/humble/include/message_filters/message_filters/message_traits.h
+ /opt/ros/humble/include/message_filters/message_filters/null_types.h
  /opt/ros/humble/include/message_filters/message_filters/parameter_adapter.h
  /opt/ros/humble/include/message_filters/message_filters/signal1.h
+ /opt/ros/humble/include/message_filters/message_filters/signal9.h
  /opt/ros/humble/include/message_filters/message_filters/simple_filter.h
+ /opt/ros/humble/include/message_filters/message_filters/subscriber.h
+ /opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h
+ /opt/ros/humble/include/message_filters/message_filters/synchronizer.h
  /opt/ros/humble/include/message_filters/message_filters/visibility_control.h
  /opt/ros/humble/include/rcl/rcl/allocator.h
  /opt/ros/humble/include/rcl/rcl/arguments.h
@@ -2523,6 +2529,7 @@ CMakeFiles/armor_detector.dir/src/detector_node.cpp.o
  /usr/include/g2o/stuff/tuple_tools.h
  /usr/include/g2o/types/slam3d/g2o_types_slam3d_api.h
  /usr/include/g2o/types/slam3d/vertex_pointxyz.h
+ /usr/include/inttypes.h
  /usr/include/kdl/frames.hpp
  /usr/include/kdl/frames.inl
  /usr/include/kdl/utilities/kdl-config.h

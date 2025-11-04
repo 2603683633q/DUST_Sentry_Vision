@@ -22,6 +22,9 @@
 #include <image_transport/image_transport.hpp>
 #include <image_transport/publisher.hpp>
 #include <image_transport/subscriber_filter.hpp>
+#include <message_filters/subscriber.h>
+#include <message_filters/synchronizer.h>
+#include <message_filters/sync_policies/approximate_time.h>
 #include <rclcpp/publisher.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/camera_info.hpp>
@@ -51,7 +54,10 @@ public:
   ArmorDetectorNode(const rclcpp::NodeOptions & options);
 
 private:
-  void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr img_msg);
+  void imageCallback(
+    const sensor_msgs::msg::Image::ConstSharedPtr img_msg_first,
+    const sensor_msgs::msg::Image::ConstSharedPtr img_msg_second);
+  void imageCallbackSingle(const sensor_msgs::msg::Image::ConstSharedPtr img_msg);
 
   std::unique_ptr<Detector> initDetector();
   std::vector<Armor> detectArmors(const sensor_msgs::msg::Image::ConstSharedPtr & img_msg);
@@ -80,8 +86,18 @@ private:
   std::shared_ptr<sensor_msgs::msg::CameraInfo> cam_info_;
   std::unique_ptr<PnPSolver> pnp_solver_;
 
-  // Image subscrpition
-  rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr img_sub_;
+  // Image subscription (single or dual-camera)
+  rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr img_sub_single_;
+  std::shared_ptr<message_filters::Subscriber<sensor_msgs::msg::Image>> img_sub_first_;
+  std::shared_ptr<message_filters::Subscriber<sensor_msgs::msg::Image>> img_sub_second_;
+  using ImageSyncPolicy = message_filters::sync_policies::ApproximateTime<
+    sensor_msgs::msg::Image, sensor_msgs::msg::Image>;
+  std::shared_ptr<message_filters::Synchronizer<ImageSyncPolicy>> img_sync_;
+  // Mode and topics
+  bool dual_camera_ = false;
+  std::string image_topic_first_;
+  std::string image_topic_second_;
+  std::string armors_topic_;
 
   // Debug information
   bool debug_;

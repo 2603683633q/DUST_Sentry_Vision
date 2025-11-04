@@ -1,0 +1,69 @@
+[0.024s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan -- -j12 -l12
+[1.430s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.430s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.430s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.430s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.430s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.430s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.430s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.430s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.430s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.430s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.430s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.430s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.430s] -- Configured cppcheck include dirs: /home/rmsentry/DUST-RM-Sentry/src/rm_perception/pointcloud_to_laserscan/include
+[1.430s] -- Configured cppcheck exclude dirs and/or files: 
+[1.430s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.431s] -- Configured cpplint exclude dirs and/or files: 
+[1.431s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.431s] -- Added test 'lint_cmake' to check CMake code style
+[1.431s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.431s] -- Added test 'uncrustify' to check C / C++ code style
+[1.431s] -- Configured uncrustify additional arguments: 
+[1.431s] -- Added test 'xmllint' to check XML markup files
+[1.431s] -- Configuring done (1.0s)
+[1.431s] -- Generating done (0.0s)
+[1.431s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan
+[1.431s] [ 20%] Built target laserscan_to_pointcloud
+[1.431s] [ 40%] Built target pointcloud_to_laserscan_node
+[1.431s] [ 60%] Built target laserscan_to_pointcloud_node
+[1.432s] [ 80%] Built target pointcloud_to_laserscan
+[1.432s] [100%] Built target dummy_pointcloud_publisher
+[1.433s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/pointcloud_to_laserscan` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[1.437s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan -- -j12 -l12
+[1.437s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan
+[1.459s] -- Install configuration: ""
+[1.459s] -- Execute custom install script
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/laserscan_to_pointcloud_node
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/pointcloud_to_laserscan_node
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/laserscan_to_pointcloud_node.hpp
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/pointcloud_to_laserscan_node.hpp
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/visibility_control.h
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/library_path.sh
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/library_path.dsv
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib/liblaserscan_to_pointcloud.so
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/dummy_pointcloud_publisher
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/pointcloud_to_laserscan_launch.py
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/sample_laserscan_to_pointcloud_launch.py
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/sample_pointcloud_to_laserscan_launch.py
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/ament_index/resource_index/package_run_dependencies/pointcloud_to_laserscan
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/ament_index/resource_index/parent_prefix_path/pointcloud_to_laserscan
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/ament_prefix_path.sh
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/ament_prefix_path.dsv
+[1.460s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/path.sh
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/path.dsv
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.bash
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.sh
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.zsh
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.dsv
+[1.461s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.dsv
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/ament_index/resource_index/packages/pointcloud_to_laserscan
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/ament_index/resource_index/rclcpp_components/pointcloud_to_laserscan
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/ament_cmake_export_libraries-extras.cmake
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/pointcloud_to_laserscanConfig.cmake
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/pointcloud_to_laserscanConfig-version.cmake
+[1.461s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.xml
+[1.470s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/pointcloud_to_laserscan

@@ -90,9 +90,15 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/message_filters/message_filters/connection.h \
   /opt/ros/humble/include/message_filters/message_filters/message_event.h \
+  /opt/ros/humble/include/message_filters/message_filters/message_traits.h \
+  /opt/ros/humble/include/message_filters/message_filters/null_types.h \
   /opt/ros/humble/include/message_filters/message_filters/parameter_adapter.h \
   /opt/ros/humble/include/message_filters/message_filters/signal1.h \
+  /opt/ros/humble/include/message_filters/message_filters/signal9.h \
   /opt/ros/humble/include/message_filters/message_filters/simple_filter.h \
+  /opt/ros/humble/include/message_filters/message_filters/subscriber.h \
+  /opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h \
+  /opt/ros/humble/include/message_filters/message_filters/synchronizer.h \
   /opt/ros/humble/include/message_filters/message_filters/visibility_control.h \
   /opt/ros/humble/include/rcl/rcl/allocator.h \
   /opt/ros/humble/include/rcl/rcl/arguments.h \
@@ -971,6 +977,7 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
   /usr/include/g2o/stuff/tuple_tools.h \
   /usr/include/g2o/types/slam3d/g2o_types_slam3d_api.h \
   /usr/include/g2o/types/slam3d/vertex_pointxyz.h \
+  /usr/include/inttypes.h \
   /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
@@ -1451,8 +1458,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
@@ -1529,7 +1534,17 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/spdlog/sinks/ansicolor_sink.h:
 
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/usr/include/spdlog/pattern_formatter-inl.h:
+
+/usr/include/spdlog/logger.h:
+
+/usr/include/spdlog/logger-inl.h:
+
+/usr/include/spdlog/fmt/fmt.h:
+
+/usr/include/spdlog/details/synchronous_factory.h:
+
+/usr/include/spdlog/details/registry.h:
 
 /usr/include/c++/11/bits/random.tcc:
 
@@ -1703,22 +1718,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
-
-/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-filepath.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
-
-/usr/include/signal.h:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
-
-/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/detail/armor__struct.hpp:
-
-/opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
-
 /opt/ros/humble/include/tf2/tf2/impl/convert.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
@@ -1775,13 +1774,13 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
 
+/usr/include/spdlog/formatter.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
+
 /opt/ros/humble/include/rmw/rmw/publisher_options.h:
 
 /usr/include/opencv4/opencv2/flann/dynamic_bitset.h:
-
-/opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
 
@@ -1806,10 +1805,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rmw/rmw/impl/config.h:
 
 /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/detail/debug_light__traits.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
 /opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
 
@@ -1855,16 +1850,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/opt/ros/humble/include/rcl/rcl/arguments.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
-
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
@@ -1902,6 +1887,10 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+
+/opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
@@ -1983,6 +1972,12 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
 
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
 
 /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/armors.hpp:
@@ -2041,6 +2036,38 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/eigen3/Eigen/Eigenvalues:
 
+/usr/include/opencv4/opencv2/flann/general.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp:
+
+/usr/include/c++/11/sstream:
+
+/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
+
+/usr/include/c++/11/bits/ostream_insert.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
+
 /usr/include/c++/11/bits/basic_ios.tcc:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
@@ -2056,14 +2083,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rcl/rcl/node.h:
 
 /opt/ros/humble/include/rcl/rcl/event.h:
-
-/usr/include/c++/11/bits/ostream_insert.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
 
@@ -2113,13 +2132,15 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
 
-/usr/include/c++/11/algorithm:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp:
 
 /opt/ros/humble/include/image_transport/image_transport/visibility_control.hpp:
 
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
+
+/usr/include/c++/11/algorithm:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
 
 /home/rmsentry/DUST-RM-Sentry/src/rm_auto_aim/armor_detector/include/armor_detector/pnp_solver.hpp:
 
@@ -2128,6 +2149,18 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/opt/ros/humble/include/rcl/rcl/arguments.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
+
+/opt/ros/humble/include/message_filters/message_filters/synchronizer.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
 
@@ -2182,10 +2215,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
-
-/opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp:
 
@@ -2299,8 +2328,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
 
-/usr/include/spdlog/details/synchronous_factory.h:
-
 /usr/include/c++/11/tr1/exp_integral.tcc:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
@@ -2308,6 +2335,8 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_executor_entities_collector.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
+
+/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:
 
 /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/detail/armors__struct.hpp:
 
@@ -2319,15 +2348,17 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/eigen3/Eigen/src/Core/Transpositions.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
-
 /opt/ros/humble/include/rcutils/rcutils/macros.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
+
+/opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
+
+/usr/include/c++/11/map:
+
+/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
+
+/usr/include/g2o/core/jacobian_workspace.h:
 
 /usr/include/g2o/core/base_multi_edge.h:
 
@@ -2387,6 +2418,8 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
 
+/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/detail/armor__struct.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
 
 /usr/include/c++/11/bits/stl_heap.h:
@@ -2414,8 +2447,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /usr/include/errno.h:
 
 /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-test-part.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
@@ -2447,19 +2478,15 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp:
 
+/opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+
 /opt/ros/humble/include/tracetools/tracetools/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
-
-/usr/include/c++/11/set:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
 
@@ -2468,6 +2495,14 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/opt/ros/humble/include/message_filters/message_filters/signal9.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/usr/include/g2o/stuff/property.h:
 
 /opt/ros/humble/include/tf2/tf2/transform_storage.hpp:
 
@@ -2478,16 +2513,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /usr/include/opencv4/opencv2/core/persistence.hpp:
 
 /usr/include/opencv4/opencv2/flann/dist.h:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/c++/11/bits/exception_ptr.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
-
-/usr/include/math.h:
-
-/usr/include/opencv4/opencv2/flann/flann_base.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
 
@@ -2501,6 +2526,26 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/linux/stat.h:
 
+/opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
+
+/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-filepath.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
+
+/usr/include/signal.h:
+
+/opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/include/fmt/format.h:
+
+/usr/include/g2o/core/base_fixed_sized_edge.h:
+
 /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
@@ -2510,6 +2555,12 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
 /opt/ros/humble/include/rcl/rcl/graph.h:
+
+/usr/include/c++/11/set:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
 
@@ -2536,6 +2587,12 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
+
+/usr/include/spdlog/details/log_msg_buffer-inl.h:
+
+/usr/include/c++/11/thread:
+
+/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:
 
 /opt/ros/humble/include/rmw/rmw/rmw.h:
 
@@ -2623,14 +2680,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
-
 /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp:
 
 /usr/include/c++/11/bits/stl_stack.h:
@@ -2662,6 +2711,8 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /usr/include/c++/11/bits/algorithmfwd.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
+
+/opt/ros/humble/include/message_filters/message_filters/subscriber.h:
 
 /usr/include/opencv4/opencv2/flann/nn_index.h:
 
@@ -2695,17 +2746,11 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
 
-/opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
+/opt/ros/humble/include/message_filters/message_filters/null_types.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
-
-/usr/include/c++/11/map:
-
-/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
-
-/usr/include/g2o/core/jacobian_workspace.h:
+/usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
 
@@ -2714,16 +2759,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
-
-/usr/include/spdlog/details/log_msg_buffer-inl.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:
-
-/usr/include/c++/11/thread:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
@@ -2785,21 +2820,11 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/c++/11/cmath:
 
-/usr/include/spdlog/details/registry.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/future_return_code.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
-
-/usr/include/fmt/format.h:
-
-/usr/include/g2o/core/base_fixed_sized_edge.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
 
@@ -2812,10 +2837,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /usr/include/spdlog/details/backtracer-inl.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
-
-/usr/include/g2o/stuff/property.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -2891,13 +2912,23 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
 
-/usr/include/opencv4/opencv2/flann/general.h:
+/usr/include/c++/11/bits/charconv.h:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:
+/usr/include/c++/11/bits/exception_ptr.h:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
 
-/usr/include/c++/11/sstream:
+/usr/include/math.h:
+
+/usr/include/opencv4/opencv2/flann/flann_base.hpp:
+
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
+
+/usr/include/c++/11/bits/concept_check.h:
 
 /usr/include/spdlog/spdlog-inl.h:
 
@@ -2933,11 +2964,11 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/opencv4/opencv2/stitching/detail/camera.hpp:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
@@ -3187,6 +3218,8 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
+/opt/ros/humble/include/message_filters/message_filters/message_traits.h:
+
 /usr/include/c++/11/limits:
 
 /usr/include/c++/11/list:
@@ -3228,8 +3261,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
 /usr/include/c++/11/streambuf:
-
-/usr/include/spdlog/fmt/fmt.h:
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
@@ -3711,15 +3742,13 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/g2o/stuff/sparse_helper.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
+/opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
 
-/usr/include/spdlog/formatter.h:
+/usr/include/inttypes.h:
 
 /usr/include/opencv4/opencv2/core/utility.hpp:
 
 /usr/include/linux/errno.h:
-
-/usr/include/spdlog/pattern_formatter-inl.h:
 
 /usr/include/linux/stddef.h:
 
@@ -3811,10 +3840,6 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 
 /usr/include/opencv4/opencv2/flann/saving.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
-/usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
-
 /usr/include/opencv4/opencv2/ml/ml.inl.hpp:
 
 /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
@@ -3868,7 +3893,3 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o: /home/rmsentry/DU
 /usr/include/spdlog/details/periodic_worker-inl.h:
 
 /usr/include/spdlog/details/periodic_worker.h:
-
-/usr/include/spdlog/logger-inl.h:
-
-/usr/include/spdlog/logger.h:

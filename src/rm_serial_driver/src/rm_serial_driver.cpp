@@ -144,7 +144,7 @@ void RMSerialDriver::receiveData()
         double freq = (dt > 0) ? (1.0 / dt) : 0.0;
       if (header[0] == 0x5A)        // 自瞄
       {
-        
+        (void)freq;
     // 1. 先调整 data 尺寸
     //data.resize(sizeof(ReceivePacket) - 2); // 减去 checksum 的两个字节
 
@@ -181,7 +181,7 @@ packet.reserved2 = *reinterpret_cast<uint16_t*>(&data[14]);
 //  printf("packet.detect_color = %u\n", packet.detect_color);
 //  printf("packet.reset_tracker = %u\n", packet.reset_tracker);
 //  printf("packet.reserved = %u\n", packet.reserved);
-  printf("packet.roll = %f\n,freq = %.2f Hz\n", packet.roll,freq);
+  // printf("packet.roll = %f\n,freq = %.2f Hz\n", packet.roll,freq);
 
  
 // printf("packet.checksum = 0x%X\n", packet.checksum);
@@ -234,7 +234,7 @@ bool crc_ok = crc16::Verify_CRC16_Check_Sum(data.data(), data.size());
             // aiming_point_.pose.position.y = packet.aim_y;
             // aiming_point_.pose.position.z = packet.aim_z;
             marker_pub_->publish(aiming_point_);
-            RCLCPP_WARN(get_logger(), "CRC true");
+            //RCLCPP_WARN(get_logger(), "CRC true");
           }
         } else {
 

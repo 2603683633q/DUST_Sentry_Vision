@@ -1,4 +1,5 @@
 /home/rmsentry/DUST-RM-Sentry/install/rm_bringup/share/rm_bringup/launch/bringup.launch.py
+/home/rmsentry/DUST-RM-Sentry/install/rm_bringup/share/rm_bringup/launch/bringup_two_pipelines.launch.py
 /home/rmsentry/DUST-RM-Sentry/install/rm_bringup/share/rm_bringup/config/camera_info.yaml
 /home/rmsentry/DUST-RM-Sentry/install/rm_bringup/share/rm_bringup/config/launch_params.yaml
 /home/rmsentry/DUST-RM-Sentry/install/rm_bringup/share/rm_bringup/config/node_params.yaml

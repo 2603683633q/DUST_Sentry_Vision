@@ -1,0 +1,337 @@
+[0.038s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces -- -j12 -l12
+[0.251s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.264s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.278s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.288s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.294s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.337s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.383s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.046s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.754s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.501s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.506s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[2.507s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.507s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.507s]   the cmake_policy command to set the policy and suppress this warning.
+[2.507s] 
+[2.507s] Call Stack (most recent call first):
+[2.508s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.508s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.508s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[2.508s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.508s] [0m
+[2.523s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.524s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[2.524s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.524s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.524s]   the cmake_policy command to set the policy and suppress this warning.
+[2.524s] 
+[2.524s] Call Stack (most recent call first):
+[2.524s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.524s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.524s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.524s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[2.524s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.524s] [0m
+[2.565s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[2.565s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.565s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.565s]   the cmake_policy command to set the policy and suppress this warning.
+[2.565s] 
+[2.565s] Call Stack (most recent call first):
+[2.565s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.565s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.565s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.566s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[2.566s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.566s] [0m
+[2.570s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.570s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.570s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.673s] -- Configuring done (2.6s)
+[2.725s] -- Generating done (0.0s)
+[2.737s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces
+[2.766s] [  0%] Built target auto_aim_interfaces__cpp
+[2.773s] [ 12%] Built target auto_aim_interfaces__rosidl_generator_c
+[2.774s] [ 12%] Built target ament_cmake_python_symlink_auto_aim_interfaces
+[2.811s] [ 36%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_cpp
+[2.811s] [ 36%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c
+[2.814s] [ 48%] Built target auto_aim_interfaces__rosidl_typesupport_cpp
+[2.817s] [ 59%] Built target auto_aim_interfaces__rosidl_typesupport_c
+[2.817s] [ 70%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.822s] [ 82%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c
+[2.838s] [ 82%] Built target auto_aim_interfaces
+[2.857s] [ 83%] Built target auto_aim_interfaces__py
+[2.894s] [ 94%] Built target auto_aim_interfaces__rosidl_generator_py
+[2.913s] [ 96%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.936s] [ 98%] Built target auto_aim_interfaces__rosidl_typesupport_c__pyext
+[2.936s] [100%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.051s] running egg_info
+[3.052s] writing auto_aim_interfaces.egg-info/PKG-INFO
+[3.052s] writing dependency_links to auto_aim_interfaces.egg-info/dependency_links.txt
+[3.052s] writing top-level names to auto_aim_interfaces.egg-info/top_level.txt
+[3.055s] reading manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'
+[3.055s] writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'
+[3.078s] [100%] Built target ament_cmake_python_build_auto_aim_interfaces_egg
+[3.093s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces -- -j12 -l12
+[3.093s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces
+[3.102s] -- Install configuration: ""
+[3.102s] -- Execute custom install script
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/ament_index/resource_index/rosidl_interfaces/auto_aim_interfaces
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armor.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armors.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_light.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_lights.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__functions.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__functions.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.h
+[3.102s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__functions.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__struct.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__functions.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__struct.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__functions.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__struct.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__functions.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__struct.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__functions.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__struct.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__type_support.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__functions.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__struct.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__type_support.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.h
+[3.103s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.h
+[3.104s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.h
+[3.104s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__functions.h
+[3.105s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__struct.h
+[3.105s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.h
+[3.105s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/gimbal_cmd.h
+[3.105s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/measurement.h
+[3.105s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.105s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/tracker_info.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.sh
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.dsv
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_fastrtps_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_introspection_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_introspection_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_introspection_c.h
+[3.106s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_introspection_c.h
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_introspection_c.h
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_introspection_c.h
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__rosidl_typesupport_introspection_c.h
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__rosidl_typesupport_introspection_c.h
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_introspection_c.h
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.hpp
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.hpp
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armor.hpp
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armors.hpp
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_light.hpp
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_lights.hpp
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__builder.hpp
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.hpp
+[3.107s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__traits.hpp
+[3.108s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.hpp
+[3.109s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__builder.hpp
+[3.109s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.hpp
+[3.109s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__traits.hpp
+[3.109s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.hpp
+[3.109s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__builder.hpp
+[3.109s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__struct.hpp
+[3.109s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__traits.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__builder.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__struct.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__traits.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__builder.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__struct.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__traits.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__builder.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__struct.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__traits.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__builder.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__struct.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__traits.hpp
+[3.110s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__type_support.hpp
+[3.111s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__builder.hpp
+[3.111s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__struct.hpp
+[3.111s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__traits.hpp
+[3.111s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__type_support.hpp
+[3.111s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__builder.hpp
+[3.111s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.hpp
+[3.111s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__traits.hpp
+[3.114s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.hpp
+[3.114s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__builder.hpp
+[3.115s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__struct.hpp
+[3.115s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__traits.hpp
+[3.115s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.hpp
+[3.116s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/gimbal_cmd.hpp
+[3.116s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/measurement.hpp
+[3.116s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.116s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.hpp
+[3.116s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/tracker_info.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_fastrtps_cpp.hpp
+[3.118s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/gimbal_cmd__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/measurement__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_introspection_cpp.hpp
+[3.119s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.sh
+[3.128s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.dsv
+[3.128s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.128s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor.py
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor_s.c
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors.py
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors_s.c
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor.py
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor_s.c
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors.py
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors_s.c
+[3.129s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light.py
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light_s.c
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights.py
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights_s.c
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_gimbal_cmd.py
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_gimbal_cmd_s.c
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_measurement.py
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_measurement_s.c
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target_s.c
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info.py
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info_s.c
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armor.idl
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armors.idl
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.idl
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLight.idl
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLights.idl
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmor.idl
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmors.idl
+[3.130s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/TrackerInfo.idl
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/GimbalCmd.idl
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Measurement.idl
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armor.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armors.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLight.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLights.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmor.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmors.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/TrackerInfo.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/GimbalCmd.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Measurement.msg
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/ament_index/resource_index/package_run_dependencies/auto_aim_interfaces
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/ament_index/resource_index/parent_prefix_path/auto_aim_interfaces
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.sh
+[3.132s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.dsv
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.sh
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.dsv
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.bash
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.sh
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.zsh
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.dsv
+[3.133s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/ament_index/resource_index/packages/auto_aim_interfaces
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig-version.cmake
+[3.133s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/package.xml
+[3.133s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so
+[3.133s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.133s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so
+[3.133s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so
+[3.133s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.143s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.143s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so
+[3.184s] Listing '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces'...
+[3.184s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py'...
+[3.184s] Listing '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg'...
+[3.184s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py'...
+[3.184s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor.py'...
+[3.184s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors.py'...
+[3.184s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor.py'...
+[3.185s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors.py'...
+[3.185s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light.py'...
+[3.185s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights.py'...
+[3.187s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_gimbal_cmd.py'...
+[3.187s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_measurement.py'...
+[3.188s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py'...
+[3.188s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info.py'...
+[3.189s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so
+[3.189s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport.cmake
+[3.189s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.190s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.190s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cppExport.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.191s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.192s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport.cmake
+[3.192s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.192s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport.cmake
+[3.192s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.438s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces

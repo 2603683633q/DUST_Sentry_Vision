@@ -41,6 +41,7 @@ def generate_launch_description():
             ('/detector/binary_img', '/detector/binary_img_first'),
             ('/detector/number_img', '/detector/number_img_first'),
             ('/detector/debug_armors', '/detector/debug_armors_first'),
+            ('/detector/marker', '/detector/marker_first'),
         ],
         extra_arguments=[{'use_intra_process_comms': True}],
     )
@@ -78,6 +79,7 @@ def generate_launch_description():
             ('/detector/binary_img', '/detector/binary_img_second'),
             ('/detector/number_img', '/detector/number_img_second'),
             ('/detector/debug_armors', '/detector/debug_armors_second'),
+            ('/detector/marker', '/detector/marker_second'),
         ],
         extra_arguments=[{'use_intra_process_comms': True}],
     )
@@ -102,7 +104,8 @@ def generate_launch_description():
         parameters=[node_params],
         remappings=[('/detector/armors', '/detector_first/armors'),
                     ('/tracker/target', '/tracker_first/target'),
-                    ('/tracker/marker', '/tracker_first/marker')],
+                    ('/tracker/marker', '/tracker_first/marker'),
+                    ('/tracker/info', '/tracker_first/info')],
         ros_arguments=['--log-level', 'armor_tracker:='+launch_params['tracker_log_level']],
     )
 
@@ -127,7 +130,8 @@ def generate_launch_description():
         parameters=[node_params],
         remappings=[('/detector/armors', '/detector_second/armors'),
                     ('/tracker/target', '/tracker_second/target'),
-                    ('/tracker/marker', '/tracker_second/marker')],
+                    ('/tracker/marker', '/tracker_second/marker'),
+                    ('/tracker/info', '/tracker_second/info')],
         ros_arguments=['--log-level', 'armor_tracker:='+launch_params['tracker_log_level']],
     )
 
@@ -155,6 +159,17 @@ def generate_launch_description():
                     'rune': launch_params['rune']  }]
     )
 
+    # Provide a TF for the second camera optical frame so detector can run
+    # NOTE: These are placeholder values (identity). Replace with real installation pose if needed.
+    static_tf_cam2 = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_camera2',
+        arguments=['0', '0', '0', '0', '0', '0', 'gimbal_link', 'camera_optical_frame_second'],
+        output='both',
+        emulate_tty=True,
+    )
+
     serial_driver_node = Node(
         package='rm_serial_driver',
         executable='rm_serial_driver_node',
@@ -176,6 +191,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         robot_state_publisher,
+        static_tf_cam2,
         delay_container0,
         delay_container1,
         delay_tracker_solver_0,

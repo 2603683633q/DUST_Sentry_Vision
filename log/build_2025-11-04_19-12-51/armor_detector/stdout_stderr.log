@@ -1,0 +1,7 @@
+[ 25%] Built target gtest
+[ 25%] Built target gtest_main
+[ 37%] Built target armor_detector_node
+[ 43%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o[0m
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:104: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

@@ -1,0 +1,278 @@
+[0.020s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/fast_lio': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/fast_lio -- -j12 -l12
+[0.046s] [0mCurrent CPU archtecture: x86_64[0m
+[0.049s] [0mProcesser number:  12[0m
+[0.049s] [0mcore for MP: 3[0m
+[0.054s] [33mCMake Warning (dev) at CMakeLists.txt:47 (find_package):
+[0.055s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.055s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.055s]   the cmake_policy command to set the policy and suppress this warning.
+[0.055s] 
+[0.055s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.055s] [0m
+[0.055s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12")
+[0.056s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.300s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.310s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.344s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.345s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.351s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.364s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.386s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.424s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.426s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.556s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.611s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.637s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.653s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.670s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.689s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[0.698s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.721s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[0.756s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[0.756s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[0.756s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[0.756s]   cmake_policy command to set the policy and suppress this warning.
+[0.757s] 
+[0.757s]   CMake variable EIGEN_ROOT is set to:
+[0.757s] 
+[0.757s]     /usr/include/eigen3
+[0.757s] 
+[0.757s]   For compatibility, find_package is ignoring the variable, but code in a
+[0.757s]   .cmake module might still use it.
+[0.757s] Call Stack (most recent call first):
+[0.757s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[0.757s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[0.757s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.757s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[0.757s]   /opt/ros/humble/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.757s]   /opt/ros/humble/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[0.757s]   CMakeLists.txt:60 (find_package)
+[0.757s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.757s] [0m
+[0.761s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.769s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[0.769s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[0.769s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[0.769s]   cmake_policy command to set the policy and suppress this warning.
+[0.769s] 
+[0.769s]   CMake variable FLANN_ROOT is set to:
+[0.769s] 
+[0.770s]     /usr
+[0.770s] 
+[0.770s]   For compatibility, find_package is ignoring the variable, but code in a
+[0.770s]   .cmake module might still use it.
+[0.770s] Call Stack (most recent call first):
+[0.770s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[0.770s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[0.770s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[0.770s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.770s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[0.770s]   /opt/ros/humble/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.770s]   /opt/ros/humble/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[0.770s]   CMakeLists.txt:60 (find_package)
+[0.770s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.770s] [0m
+[0.788s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.199s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.206s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.515s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.523s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.531s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.834s] -- Found Qhull version 8.0.2
+[2.084s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.347s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.348s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.405s] -- Found livox_ros_driver2: 1.0.0 (/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[2.424s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.433s] [33mCMake Warning (dev) at CMakeLists.txt:81 (find_package):
+[2.433s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[2.433s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[2.433s]   command to set the policy and suppress this warning.
+[2.433s] 
+[2.433s]   CMake variable PCL_ROOT is set to:
+[2.433s] 
+[2.433s]     /usr
+[2.433s] 
+[2.433s]   For compatibility, CMake is ignoring the variable.
+[2.433s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.433s] [0m
+[2.438s] -- PCL: /usr/include/pcl-1.12
+[2.438s] [0mEigen:/usr/include/eigen3[0m
+[2.741s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.240s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.439s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.440s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[3.440s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[3.440s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[3.440s]   the cmake_policy command to set the policy and suppress this warning.
+[3.440s] 
+[3.440s] Call Stack (most recent call first):
+[3.441s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[3.441s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[3.441s]   CMakeLists.txt:90 (rosidl_generate_interfaces)
+[3.441s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.441s] [0m
+[3.456s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.456s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[3.456s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[3.456s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[3.456s]   the cmake_policy command to set the policy and suppress this warning.
+[3.456s] 
+[3.456s] Call Stack (most recent call first):
+[3.456s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[3.457s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[3.457s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[3.457s]   CMakeLists.txt:90 (rosidl_generate_interfaces)
+[3.457s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.457s] [0m
+[3.471s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[3.472s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[3.472s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[3.472s]   the cmake_policy command to set the policy and suppress this warning.
+[3.472s] 
+[3.472s] Call Stack (most recent call first):
+[3.472s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[3.472s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[3.472s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[3.472s]   CMakeLists.txt:90 (rosidl_generate_interfaces)
+[3.472s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.472s] [0m
+[3.473s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[3.473s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.473s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.473s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.517s] -- Configuring done (3.5s)
+[3.564s] -- Generating done (0.0s)
+[3.574s] -- Build files have been written to: /home/rmsentry/DUST-RM-Sentry/build/fast_lio
+[3.601s] [  2%] Built target fast_lio__cpp
+[3.601s] [ 11%] Built target fast_lio__rosidl_generator_c
+[3.603s] [ 11%] Built target ament_cmake_python_symlink_fast_lio
+[3.613s] [ 20%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[3.614s] [ 40%] Built target fast_lio__rosidl_typesupport_cpp
+[3.614s] [ 42%] Built target fast_lio__rosidl_typesupport_c
+[3.614s] [ 45%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[3.614s] [ 54%] Built target fast_lio__rosidl_typesupport_introspection_c
+[3.615s] [ 62%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[3.623s] [ 62%] Built target fast_lio
+[3.632s] [ 65%] Built target fast_lio__py
+[3.643s] [ 82%] Built target fastlio_mapping
+[3.643s] [ 82%] Built target fast_lio__rosidl_generator_py
+[3.653s] [ 94%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[3.654s] [ 94%] Built target fast_lio__rosidl_typesupport_c__pyext
+[3.655s] [100%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[3.751s] running egg_info
+[3.751s] writing fast_lio.egg-info/PKG-INFO
+[3.751s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[3.751s] writing top-level names to fast_lio.egg-info/top_level.txt
+[3.753s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[3.753s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[3.769s] [100%] Built target ament_cmake_python_build_fast_lio_egg
+[3.774s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --build /home/rmsentry/DUST-RM-Sentry/build/fast_lio -- -j12 -l12
+[3.775s] Invoking command in '/home/rmsentry/DUST-RM-Sentry/build/fast_lio': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/fast_lio
+[3.778s] -- Install configuration: "Release"
+[3.778s] -- Execute custom install script
+[3.778s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[3.778s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/environment/library_path.sh
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/environment/library_path.dsv
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp
+[3.779s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/environment/pythonpath.sh
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[3.780s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.781s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.781s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[3.781s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[3.781s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[3.781s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.781s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/msg/Pose6D.idl
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/msg/Pose6D.msg
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/fast_lio/fastlio_mapping
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/config/avia.yaml
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/config/horizon.yaml
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/config/mid360.yaml
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/config/ouster64.yaml
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/config/velodyne.yaml
+[3.782s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/launch/mapping.launch.py
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/environment/path.sh
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/environment/path.dsv
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/local_setup.bash
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/local_setup.sh
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/local_setup.zsh
+[3.783s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/local_setup.dsv
+[3.783s] -- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/package.dsv
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[3.787s] -- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/package.xml
+[3.787s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[3.787s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[3.787s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[3.788s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[3.788s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[3.788s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[3.788s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[3.815s] Listing '/home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[3.815s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...
+[3.815s] Listing '/home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[3.815s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...
+[3.815s] Compiling '/home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[3.818s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[3.819s] -- Up-to-date: /home/rmsentry/DUST-RM-Sentry/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[3.820s] Invoked command in '/home/rmsentry/DUST-RM-Sentry/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/local/bin/cmake --install /home/rmsentry/DUST-RM-Sentry/build/fast_lio
