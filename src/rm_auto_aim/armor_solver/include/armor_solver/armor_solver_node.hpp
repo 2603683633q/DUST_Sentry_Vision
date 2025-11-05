@@ -37,6 +37,7 @@
 #include "auto_aim_interfaces/msg/armors.hpp"
 #include "auto_aim_interfaces/msg/measurement.hpp"
 #include "auto_aim_interfaces/msg/target.hpp"
+#include "auto_aim_interfaces/msg/armors.hpp"
 
 namespace rm_auto_aim {
 using tf2_filter = tf2_ros::MessageFilter<auto_aim_interfaces::msg::Target>;
@@ -88,6 +89,19 @@ private:
   visualization_msgs::msg::Marker armors_marker_;
   visualization_msgs::msg::Marker selection_marker_;
   rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr marker_pub_;
+
+  // Subscriptions to detector armors topics (first and second pipelines)
+  rclcpp::Subscription<auto_aim_interfaces::msg::Armors>::SharedPtr armors_first_sub_;
+  rclcpp::Subscription<auto_aim_interfaces::msg::Armors>::SharedPtr armors_second_sub_;
+
+  // Latest detector states
+  int latest_first_count_ = 0;
+  int latest_second_count_ = 0;
+  double latest_second_x_ = 0.0;  // x of the first armor in second pipeline
+  rclcpp::Time last_first_time_{};
+  rclcpp::Time last_second_time_{};
+  // Freshness threshold (seconds) for detector messages
+  double detector_fresh_threshold_sec_ = 0.2;
 };
 
 }  // namespace rm_auto_aim

@@ -27,6 +27,8 @@ ArmorSolverNode::ArmorSolverNode(const rclcpp::NodeOptions &options)
   RCLCPP_INFO(this->get_logger(), "ArmorSolverNode started!");
 
   debug_mode_ = this->declare_parameter("debug", true);
+  // Parameter to control detector freshness window
+  detector_fresh_threshold_sec_ = this->declare_parameter("detector_fresh_threshold", 0.2);
 
   // Subscriber with tf2 message_filter
   // tf2 relevant
@@ -68,20 +70,77 @@ ArmorSolverNode::ArmorSolverNode(const rclcpp::NodeOptions &options)
   if (debug_mode_) {
     initMarkers();
   }
+
+  // Subscribe to detector outputs to implement simple yaw override logic
+  auto qos = rclcpp::SensorDataQoS();
+  armors_first_sub_ = this->create_subscription<auto_aim_interfaces::msg::Armors>(
+    "/detector_first/armors", qos,
+    [this](auto_aim_interfaces::msg::Armors::ConstSharedPtr msg) {
+      latest_first_count_ = static_cast<int>(msg->armors.size());
+      // Use local receipt time to judge freshness (camera header stamps may be unsynced)
+      last_first_time_ = this->now();
+    });
+
+  armors_second_sub_ = this->create_subscription<auto_aim_interfaces::msg::Armors>(
+    "/detector_second/armors", qos,
+    [this](auto_aim_interfaces::msg::Armors::ConstSharedPtr msg) {
+      latest_second_count_ = static_cast<int>(msg->armors.size());
+      // Use local receipt time to judge freshness (camera header stamps may be unsynced)
+      last_second_time_ = this->now();
+      if (!msg->armors.empty()) {
+        // Use the first armor's x coordinate as direction hint
+        latest_second_x_ = msg->armors.front().pose.position.x;
+      }
+    });
 }
 
 void ArmorSolverNode::timerCallback() {
   // RCLCPP_INFO(this->get_logger(), "ArmorSolverNode timerCallback");
-  if (solver_ == nullptr) {
-    return;
-  }
-
   if (!enable_) {
     return;
   }
 
   // Init message
   auto_aim_interfaces::msg::GimbalCmd control_msg;
+
+  // Simple override: if first pipeline has no armors and second has armors recently,
+  // publish a small yaw command based on the sign of x from the second pipeline.
+  const auto now = this->now();
+  const bool second_fresh = (last_second_time_.nanoseconds() > 0) &&
+                            ((now - last_second_time_).seconds() <= detector_fresh_threshold_sec_);
+  const bool first_fresh = (last_first_time_.nanoseconds() > 0) &&
+                           ((now - last_first_time_).seconds() <= detector_fresh_threshold_sec_);
+  if ((!first_fresh || latest_first_count_ == 0) && second_fresh && latest_second_count_ > 0) {
+    control_msg.header.stamp = now;
+    control_msg.header.frame_id = "gimbal_link";
+    control_msg.pitch = 0.0;
+    // If x > 0 => yaw_diff = -0.3; if x < 0 => yaw_diff = 0.3
+    if (latest_second_x_ > 0.0) {
+      control_msg.yaw_diff = -0.3;
+    } else if (latest_second_x_ < 0.0) {
+      control_msg.yaw_diff = 0.3;
+    } else {
+      control_msg.yaw_diff = 0.0;
+    }
+    control_msg.yaw = 0.0;
+    control_msg.pitch_diff = 0.0;
+    control_msg.distance = -1.0;
+    control_msg.fire_advice = false;
+    if (debug_mode_) {
+      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+        "Override yaw_diff=%.3f (second_x=%.3f, first_count=%d, second_count=%d)",
+        control_msg.yaw_diff, latest_second_x_, latest_first_count_, latest_second_count_);
+    }
+    gimbal_pub_->publish(control_msg);
+    if (debug_mode_) {
+      publishMarkers(control_msg);
+    }
+    return;
+  }
+
+  if (solver_ == nullptr) {
+    return;
+  }
 
   // If target never detected
   if (armor_target_.header.frame_id.empty()) {
