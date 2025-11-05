@@ -1,0 +1,42 @@
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:[m[K In constructor ‘[01m[Krm_serial_driver::RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:54:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_nodes_[m[K’ was not declared in this scope
+   54 |   [01;31m[Kdetector_nodes_[m[K = this->declare_parameter<std::vector<std::string>>(
+      |   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:57:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_param_clients_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetector_param_client_[m[K’?
+   57 |     [01;31m[Kdetector_param_clients_[m[K.emplace_back(std::make_shared<rclcpp::AsyncParametersClient>(this, name));
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kdetector_param_client_[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:[m[K In member function ‘[01m[Kvoid rm_serial_driver::RMSerialDriver::setParam(const rclcpp::Parameter&)[m[K’:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:405:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_param_clients_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetector_param_client_[m[K’?
+  405 |   for (size_t i = 0; i < [01;31m[Kdetector_param_clients_[m[K.size(); ++i) {
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                          [32m[Kdetector_param_client_[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:407:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_nodes_[m[K’ was not declared in this scope
+  407 |     const auto & target_name = [01;31m[Kdetector_nodes_[m[K[i];
+      |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:7[m[K:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:[m[K In lambda function:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:419:96:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_name[m[K’ is not captured
+  419 |             RCLCPP_ERROR(get_logger(), "Failed to set %s on %s: %s", param.get_name().c_str(), [01;31m[Ktarget_name[m[K.c_str(), result.reason.c_str());
+      |                                                                                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:416:41:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+  416 |       {param}, [this, target_name, param[01;36m[K][m[K(const ResultFuturePtr & results) {
+      |                                         [01;36m[K^[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:407:18:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>target_name[m[K’ declared here
+  407 |     const auto & [01;36m[Ktarget_name[m[K = detector_nodes_[i];
+      |                  [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:7[m[K:
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:423:84:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_name[m[K’ is not captured
+  423 |         RCLCPP_INFO(get_logger(), "Set %s on %s to %ld", param.get_name().c_str(), [01;31m[Ktarget_name[m[K.c_str(), param.as_int());
+      |                                                                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:416:41:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+  416 |       {param}, [this, target_name, param[01;36m[K][m[K(const ResultFuturePtr & results) {
+      |                                         [01;36m[K^[m[K
+[01m[K/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:407:18:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>target_name[m[K’ declared here
+  407 |     const auto & [01;36m[Ktarget_name[m[K = detector_nodes_[i];
+      |                  [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rm_serial_driver.dir/build.make:76：CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/rm_serial_driver.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

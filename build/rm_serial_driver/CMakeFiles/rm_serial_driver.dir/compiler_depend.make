@@ -118,11 +118,16 @@ CMakeFiles/rm_serial_driver.dir/src/crc.cpp.o: /home/rmsentry/DUST-RM-Sentry/src
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -160,6 +165,7 @@ CMakeFiles/rm_serial_driver.dir/src/crc.cpp.o: /home/rmsentry/DUST-RM-Sentry/src
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
@@ -1379,6 +1385,7 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
   /usr/include/x86_64-linux-gnu/bits/eventfd.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -1401,6 +1408,7 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/netdb.h \
   /usr/include/x86_64-linux-gnu/bits/poll.h \
+  /usr/include/x86_64-linux-gnu/bits/poll2.h \
   /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -1409,6 +1417,7 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/sigaction.h \
   /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
@@ -1424,6 +1433,7 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
   /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket2.h \
   /usr/include/x86_64-linux-gnu/bits/socket_type.h \
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
@@ -1431,8 +1441,14 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
   /usr/include/x86_64-linux-gnu/bits/statx.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -1492,10 +1508,12 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
@@ -1584,7 +1602,11 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
 /usr/include/x86_64-linux-gnu/bits/statx.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
@@ -1634,6 +1656,8 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
@@ -1655,8 +1679,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/string.h:
 
 /usr/include/poll.h:
-
-/usr/include/netinet/tcp.h:
 
 /usr/include/netinet/in.h:
 
@@ -1826,9 +1848,13 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asm-generic/socket.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
+/usr/include/asm-generic/posix_types.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asio/write_at.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
@@ -1839,10 +1865,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
-
-/usr/include/asio/detail/atomic_count.hpp:
-
-/usr/include/asio/use_future.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
 
@@ -1932,6 +1954,8 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__type_support.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/asio/detail/string_view.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/eventfd.h:
@@ -2012,8 +2036,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
 
 /usr/include/asio/detail/reactor.hpp:
@@ -2075,10 +2097,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/sched.h:
 
 /usr/include/asio/posix/basic_descriptor.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
@@ -2195,12 +2213,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /opt/ros/humble/include/rcl/rcl/event.h:
 
 /usr/include/asio/ip/impl/network_v6.ipp:
-
-/opt/ros/humble/include/rmw/rmw/event_callback_type.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
-
-/opt/ros/humble/include/rcl/rcl/client.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
@@ -2332,17 +2344,39 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/termios-struct.h:
+/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
 
-/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
-/usr/include/c++/11/bits/stl_pair.h:
+/usr/include/asio/detail/bind_handler.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
+
+/usr/include/asio/detail/thread_info_base.hpp:
+
+/opt/ros/humble/include/rmw/rmw/event_callback_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/opt/ros/humble/include/rcl/rcl/init_options.h:
+
+/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios.h:
+
+/usr/include/asio/detail/thread.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
+
+/usr/include/asio/traits/prefer_member.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
@@ -2356,13 +2390,15 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/detail/timer_queue_base.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
 /usr/include/c++/11/bits/specfun.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/c++/11/iostream:
 
@@ -2375,6 +2411,10 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -2478,14 +2518,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/execution/detail/as_operation.hpp:
 
-/opt/ros/humble/include/rcl/rcl/init_options.h:
-
-/opt/ros/humble/include/rcutils/rcutils/allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/termios.h:
-
-/usr/include/asio/detail/thread.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
@@ -2497,18 +2529,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /opt/ros/humble/include/rcl/rcl/context.h:
 
 /usr/include/asio/ip/detail/impl/endpoint.ipp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/publisher_options.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
 /usr/include/c++/11/ext/type_traits.h:
 
@@ -2552,7 +2572,17 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/generic/stream_protocol.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+/usr/include/c++/11/cwctype:
+
+/opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
+
+/usr/include/asio/defer.hpp:
+
+/usr/include/c++/11/atomic:
+
+/usr/include/asio/detail/posix_signal_blocker.hpp:
+
+/usr/include/asio/ip/basic_endpoint.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
@@ -2618,14 +2648,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
-
-/usr/include/asio/traits/prefer_member.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
 /usr/include/asio/impl/error.ipp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
@@ -2655,26 +2677,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
 
 /usr/include/c++/11/bits/locale_classes.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
-
-/usr/include/termios.h:
-
-/usr/include/c++/11/ext/atomicity.h:
-
-/usr/include/c++/11/bits/stl_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/asm-generic/sockios.h:
-
-/usr/include/asio/ip/impl/address_v4.ipp:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -2764,8 +2766,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/ip/basic_resolver_results.hpp:
 
-/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory.hpp:
-
 /home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/src/rm_serial_driver.cpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
@@ -2794,19 +2794,17 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/ip/address_v4_range.hpp:
 
-/usr/include/c++/11/ext/new_allocator.h:
+/usr/include/c++/11/bits/functexcept.h:
 
-/usr/include/c++/11/cwctype:
+/usr/include/asio/detail/mutex.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
+/usr/include/asio/detail/atomic_count.hpp:
 
-/usr/include/asio/defer.hpp:
+/usr/include/asio/use_future.hpp:
 
-/usr/include/c++/11/atomic:
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
-/usr/include/asio/detail/posix_signal_blocker.hpp:
-
-/usr/include/asio/ip/basic_endpoint.hpp:
+/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/asio/detail/impl/strand_service.hpp:
 
@@ -2825,6 +2823,10 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
+
+/usr/include/asio/coroutine.hpp:
 
 /usr/include/asio/impl/error_code.ipp:
 
@@ -2854,18 +2856,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/detail/socket_option.hpp:
 
-/usr/include/c++/11/bits/locale_facets.tcc:
-
-/opt/ros/humble/include/rmw/rmw/event.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/11/bits/postypes.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp:
@@ -2875,6 +2865,8 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/c++/11/cwchar:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__traits.hpp:
 
@@ -2900,6 +2892,8 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/gimbal_cmd.hpp:
 
+/usr/include/c++/11/ext/new_allocator.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
@@ -2922,6 +2916,12 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/detail/posix_event.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/publisher_options.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
 
 /usr/include/asio/basic_io_object.hpp:
@@ -2929,6 +2929,8 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/ctype.h:
 
 /usr/include/asio/detail/descriptor_write_op.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /usr/include/c++/11/cstdint:
 
@@ -2939,6 +2941,22 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/opt/ros/humble/include/rcl/rcl/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-struct.h:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
+
+/usr/include/c++/11/bits/stl_pair.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
@@ -2957,6 +2975,38 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/asio/detail/service_registry.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
+
+/usr/include/termios.h:
+
+/usr/include/c++/11/ext/atomicity.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/asio/ip/impl/address_v4.ipp:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
 
@@ -3016,6 +3066,10 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/detail/posix_static_mutex.hpp:
 
+/usr/include/netinet/tcp.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/asio/execution/context.hpp:
@@ -3054,6 +3108,14 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/c++/11/streambuf:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
@@ -3091,20 +3153,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/asio/ip/impl/address_v6.ipp:
 
 /usr/include/asio/detail/impl/eventfd_select_interrupter.ipp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
-
-/usr/include/asio/coroutine.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
-
-/usr/include/asio/detail/bind_handler.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
-
-/usr/include/asio/detail/thread_info_base.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
@@ -3147,6 +3195,30 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
+
+/usr/include/strings.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
+/usr/include/asio/query.hpp:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
+
+/usr/include/asio/error.hpp:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:
+
+/usr/include/asio/system_executor.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -3226,6 +3298,10 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /opt/ros/humble/include/tracetools/tracetools/config.h:
 
+/usr/include/c++/11/bits/streambuf_iterator.h:
+
+/opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:
 
 /usr/include/asio/basic_seq_packet_socket.hpp:
@@ -3304,45 +3380,21 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
+/opt/ros/humble/include/rcl/rcl/client.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
 
-/opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
 
-/usr/include/c++/11/bits/streambuf_iterator.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/include/c++/11/bits/functexcept.h:
+/opt/ros/humble/include/rmw/rmw/event.h:
 
-/usr/include/asio/detail/mutex.hpp:
-
-/usr/include/strings.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
-
-/usr/include/c++/11/bits/exception_defines.h:
-
-/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
-
-/usr/include/asio/error.hpp:
-
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:
-
-/usr/include/asio/system_executor.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
-
-/usr/include/asio/query.hpp:
+/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory.hpp:
 
 /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp:
 
@@ -3450,6 +3502,8 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/asio/multiple_exceptions.hpp:
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
@@ -3512,8 +3566,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
-
 /opt/ros/humble/include/serial_driver/serial_driver.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
@@ -3542,7 +3594,9 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__type_support.hpp:
 
-/usr/include/asm-generic/int-ll64.h:
+/usr/include/asm-generic/ioctl.h:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/trigger.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:
 
@@ -3595,6 +3649,8 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/asio/basic_waitable_timer.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/poll2.h:
 
 /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp:
 
@@ -3651,8 +3707,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/asio/local/stream_protocol.hpp:
 
 /usr/include/asio/associated_allocator.hpp:
-
-/usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/asio/detail/handler_work.hpp:
 
@@ -3900,8 +3954,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/detail/scheduler_thread_info.hpp:
 
-/usr/include/asio/write_at.hpp:
-
 /usr/include/asio/detail/scoped_lock.hpp:
 
 /usr/include/asio/detail/select_interrupter.hpp:
@@ -4146,10 +4198,6 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 
 /usr/include/asio/is_executor.hpp:
 
-/opt/ros/humble/include/rcl/rcl/types.h:
-
-/usr/include/asm-generic/ioctls.h:
-
 /usr/include/asio/impl/io_context.ipp:
 
 /usr/include/asio/is_read_buffered.hpp:
@@ -4245,9 +4293,3 @@ CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o: /home/rmsentry/DUST-
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/asio/windows/random_access_handle.hpp:
-
-/opt/ros/humble/include/std_srvs/std_srvs/srv/trigger.hpp:
-
-/usr/include/asm-generic/ioctl.h:
-
-/usr/include/asm-generic/posix_types.h:

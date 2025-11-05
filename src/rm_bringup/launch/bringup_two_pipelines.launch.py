@@ -120,31 +120,31 @@ def generate_launch_description():
         ros_arguments=['--log-level', 'armor_solver:='+launch_params['solver_log_level']],
     )
 
-    # Tracker and solver for pipeline 1
-    tracker1 = Node(
-        package='armor_tracker',
-        executable='armor_tracker_node',
-        name='armor_tracker_second',
-        output='both',
-        emulate_tty=True,
-        parameters=[node_params],
-        remappings=[('/detector/armors', '/detector_second/armors'),
-                    ('/tracker/target', '/tracker_second/target'),
-                    ('/tracker/marker', '/tracker_second/marker'),
-                    ('/tracker/info', '/tracker_second/info')],
-        ros_arguments=['--log-level', 'armor_tracker:='+launch_params['tracker_log_level']],
-    )
+    # # Tracker and solver for pipeline 1
+    # tracker1 = Node(
+    #     package='armor_tracker',
+    #     executable='armor_tracker_node',
+    #     name='armor_tracker_second',
+    #     output='both',
+    #     emulate_tty=True,
+    #     parameters=[node_params],
+    #     remappings=[('/detector/armors', '/detector_second/armors'),
+    #                 ('/tracker/target', '/tracker_second/target'),
+    #                 ('/tracker/marker', '/tracker_second/marker'),
+    #                 ('/tracker/info', '/tracker_second/info')],
+    #     ros_arguments=['--log-level', 'armor_tracker:='+launch_params['tracker_log_level']],
+    # )
 
-    solver1 = Node(
-        package='armor_solver',
-        executable='armor_solver_node',
-        name='armor_solver_second',
-        output='both',
-        emulate_tty=True,
-        parameters=[node_params],
-        remappings=[('tracker/target', '/tracker_second/target')],
-        ros_arguments=['--log-level', 'armor_solver:='+launch_params['solver_log_level']],
-    )
+    # solver1 = Node(
+    #     package='armor_solver',
+    #     executable='armor_solver_node',
+    #     name='armor_solver_second',
+    #     output='both',
+    #     emulate_tty=True,
+    #     parameters=[node_params],
+    #     remappings=[('tracker/target', '/tracker_second/target')],
+    #     ros_arguments=['--log-level', 'armor_solver:='+launch_params['solver_log_level']],
+    # )
 
     # Serial driver / robot_state_publisher are shared if needed
     robot_description = Command(['xacro ', os.path.join(
@@ -186,7 +186,7 @@ def generate_launch_description():
     delay_container0 = TimerAction(period=1.0, actions=[container0])
     delay_container1 = TimerAction(period=1.0, actions=[container1])
     delay_tracker_solver_0 = TimerAction(period=2.0, actions=[tracker0, solver0])
-    delay_tracker_solver_1 = TimerAction(period=2.0, actions=[tracker1, solver1])
+    # delay_tracker_solver_1 = TimerAction(period=2.0, actions=[tracker1, solver1])
     delay_serial = TimerAction(period=5.0, actions=[serial_driver_node])
 
     return LaunchDescription([
@@ -195,6 +195,6 @@ def generate_launch_description():
         delay_container0,
         delay_container1,
         delay_tracker_solver_0,
-        delay_tracker_solver_1,
+        # delay_tracker_solver_1,
         delay_serial,
     ])

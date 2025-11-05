@@ -22,6 +22,7 @@
 #include <string>
 #include <thread>
 #include <vector>
+#include <unordered_map>
 
 #include "auto_aim_interfaces/msg/gimbal_cmd.hpp"
 
@@ -59,12 +60,18 @@ private:
   std::unique_ptr<drivers::serial_driver::SerialPortConfig> device_config_;
   std::unique_ptr<drivers::serial_driver::SerialDriver> serial_driver_;
 
-  // Param client to set detect_colr
+  // Param clients to set detect_color on one or more detector nodes
   using ResultFuturePtr = std::shared_future<std::vector<rcl_interfaces::msg::SetParametersResult>>;
-  bool initial_set_param_ = false;
+  // Desired color last received from serial
   uint8_t previous_receive_color_ = 0;
-  rclcpp::AsyncParametersClient::SharedPtr detector_param_client_;
-  ResultFuturePtr set_param_future_;
+  // Names of detector nodes to configure
+  std::vector<std::string> detector_node_names_;
+  // Per-node AsyncParametersClient
+  std::unordered_map<std::string, rclcpp::AsyncParametersClient::SharedPtr> detector_param_clients_;
+  // Per-node inflight future
+  std::unordered_map<std::string, ResultFuturePtr> set_param_futures_;
+  // Per-node last applied color (-1 means never set)
+  std::unordered_map<std::string, int> last_set_color_;
 
   // Service client to reset tracker
   rclcpp::Client<std_srvs::srv::Trigger>::SharedPtr reset_tracker_client_;

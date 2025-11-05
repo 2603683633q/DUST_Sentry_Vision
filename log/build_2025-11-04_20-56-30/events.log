@@ -1,0 +1,231 @@
+[0.000000] (-) TimerEvent: {}
+[0.000497] (-) JobUnselected: {'identifier': 'armor_detector'}
+[0.000749] (-) JobUnselected: {'identifier': 'armor_tracker'}
+[0.000852] (-) JobUnselected: {'identifier': 'auto_aim_interfaces'}
+[0.000865] (-) JobUnselected: {'identifier': 'costmap_converter'}
+[0.000876] (-) JobUnselected: {'identifier': 'costmap_converter_msgs'}
+[0.000886] (-) JobUnselected: {'identifier': 'fake_msg_publisher'}
+[0.000895] (-) JobUnselected: {'identifier': 'fast_lio'}
+[0.000905] (-) JobUnselected: {'identifier': 'global_interface'}
+[0.000914] (-) JobUnselected: {'identifier': 'hik_camera'}
+[0.000924] (-) JobUnselected: {'identifier': 'hik_camera_first'}
+[0.000933] (-) JobUnselected: {'identifier': 'hik_camera_second'}
+[0.000942] (-) JobUnselected: {'identifier': 'icp_registration'}
+[0.000951] (-) JobUnselected: {'identifier': 'imu_complementary_filter'}
+[0.000960] (-) JobUnselected: {'identifier': 'linefit_ground_segmentation'}
+[0.000970] (-) JobUnselected: {'identifier': 'linefit_ground_segmentation_ros'}
+[0.000979] (-) JobUnselected: {'identifier': 'livox_interfaces'}
+[0.000989] (-) JobUnselected: {'identifier': 'livox_ros2_driver'}
+[0.000998] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.001007] (-) JobUnselected: {'identifier': 'livox_sdk_vendor'}
+[0.001017] (-) JobUnselected: {'identifier': 'point_lio'}
+[0.001031] (-) JobUnselected: {'identifier': 'pointcloud_merger'}
+[0.001127] (-) JobUnselected: {'identifier': 'pointcloud_to_laserscan'}
+[0.001136] (-) JobUnselected: {'identifier': 'rm_auto_aim'}
+[0.001143] (-) JobUnselected: {'identifier': 'rm_bringup'}
+[0.001151] (-) JobUnselected: {'identifier': 'rm_decision'}
+[0.001176] (-) JobUnselected: {'identifier': 'rm_decision_interfaces'}
+[0.001184] (-) JobUnselected: {'identifier': 'rm_gimbal_description'}
+[0.001192] (-) JobUnselected: {'identifier': 'rm_navigation'}
+[0.001199] (-) JobUnselected: {'identifier': 'rm_robot_description'}
+[0.001207] (-) JobUnselected: {'identifier': 'rm_serial_driver'}
+[0.001215] (-) JobUnselected: {'identifier': 'robot_decision'}
+[0.001222] (-) JobUnselected: {'identifier': 'teb_local_planner'}
+[0.001230] (-) JobUnselected: {'identifier': 'teb_msgs'}
+[0.001238] (-) JobUnselected: {'identifier': 'vision_msg'}
+[0.001248] (armor_solver) JobQueued: {'identifier': 'armor_solver', 'dependencies': OrderedDict([('auto_aim_interfaces', '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces')])}
+[0.001262] (armor_solver) JobStarted: {'identifier': 'armor_solver'}
+[0.011323] (armor_solver) JobProgress: {'identifier': 'armor_solver', 'progress': 'cmake'}
+[0.011858] (armor_solver) JobProgress: {'identifier': 'armor_solver', 'progress': 'build'}
+[0.012318] (armor_solver) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/rmsentry/DUST-RM-Sentry/build/armor_solver', '--', '-j12', '-l12'], 'cwd': '/home/rmsentry/DUST-RM-Sentry/build/armor_solver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'rmsentry'), ('SSH_CLIENT', '192.168.1.67 45440 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('BROWSER', '/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rmsentry'), ('OLDPWD', '/home/rmsentry'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c671878a-2099-4e33-9b64-a7ec077ff6f4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rmsentry/DUST-RM-Sentry/install:/home/rmsentry/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rmsentry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/rmsentry/.local/bin:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/bin:/home/rmsentry/DUST-RM-Sentry/install/armor_side/bin:/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:/home/rmsentry/.local/bin:/opt/ros/humble/bin:/home/rmsentry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/rmsentry/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libusb-1.0.so.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-57f8c2ade3.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/rmsentry/DUST-RM-Sentry/build/armor_solver'), ('SSH_CONNECTION', '192.168.1.67 45440 192.168.1.160 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/build/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_decision/lib/python3.10/site-packages:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/build/fake_msg_publisher:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher/lib/python3.10/site-packages:/home/rmsentry/DUST-RM-Sentry/install/global_interface/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/build/armor_side:/home/rmsentry/DUST-RM-Sentry/install/armor_side/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.044869] (armor_solver) StdoutLine: {'line': b'[ 28%] Built target armor_solver_node\n'}
+[0.056816] (armor_solver) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/armor_solver.dir/src/armor_solver_node.cpp.o\x1b[0m\n'}
+[0.099651] (-) TimerEvent: {}
+[0.200101] (-) TimerEvent: {}
+[0.300467] (-) TimerEvent: {}
+[0.400726] (-) TimerEvent: {}
+[0.500998] (-) TimerEvent: {}
+[0.601274] (-) TimerEvent: {}
+[0.701561] (-) TimerEvent: {}
+[0.801952] (-) TimerEvent: {}
+[0.902322] (-) TimerEvent: {}
+[1.002637] (-) TimerEvent: {}
+[1.103022] (-) TimerEvent: {}
+[1.203363] (-) TimerEvent: {}
+[1.303653] (-) TimerEvent: {}
+[1.404113] (-) TimerEvent: {}
+[1.504477] (-) TimerEvent: {}
+[1.604812] (-) TimerEvent: {}
+[1.705087] (-) TimerEvent: {}
+[1.805382] (-) TimerEvent: {}
+[1.905650] (-) TimerEvent: {}
+[2.006004] (-) TimerEvent: {}
+[2.106307] (-) TimerEvent: {}
+[2.206563] (-) TimerEvent: {}
+[2.306838] (-) TimerEvent: {}
+[2.407308] (-) TimerEvent: {}
+[2.507607] (-) TimerEvent: {}
+[2.607876] (-) TimerEvent: {}
+[2.708244] (-) TimerEvent: {}
+[2.808540] (-) TimerEvent: {}
+[2.908847] (-) TimerEvent: {}
+[3.009198] (-) TimerEvent: {}
+[3.109473] (-) TimerEvent: {}
+[3.209752] (-) TimerEvent: {}
+[3.310135] (-) TimerEvent: {}
+[3.410387] (-) TimerEvent: {}
+[3.510663] (-) TimerEvent: {}
+[3.610994] (-) TimerEvent: {}
+[3.711257] (-) TimerEvent: {}
+[3.811516] (-) TimerEvent: {}
+[3.911768] (-) TimerEvent: {}
+[4.012095] (-) TimerEvent: {}
+[4.112337] (-) TimerEvent: {}
+[4.212641] (-) TimerEvent: {}
+[4.312933] (-) TimerEvent: {}
+[4.413198] (-) TimerEvent: {}
+[4.513464] (-) TimerEvent: {}
+[4.613856] (-) TimerEvent: {}
+[4.714148] (-) TimerEvent: {}
+[4.814560] (-) TimerEvent: {}
+[4.914856] (-) TimerEvent: {}
+[5.015221] (-) TimerEvent: {}
+[5.115550] (-) TimerEvent: {}
+[5.215852] (-) TimerEvent: {}
+[5.316103] (-) TimerEvent: {}
+[5.416482] (-) TimerEvent: {}
+[5.516868] (-) TimerEvent: {}
+[5.617184] (-) TimerEvent: {}
+[5.717590] (-) TimerEvent: {}
+[5.817908] (-) TimerEvent: {}
+[5.918267] (-) TimerEvent: {}
+[6.018546] (-) TimerEvent: {}
+[6.118837] (-) TimerEvent: {}
+[6.219192] (-) TimerEvent: {}
+[6.319490] (-) TimerEvent: {}
+[6.419773] (-) TimerEvent: {}
+[6.520107] (-) TimerEvent: {}
+[6.620445] (-) TimerEvent: {}
+[6.720684] (-) TimerEvent: {}
+[6.821071] (-) TimerEvent: {}
+[6.921666] (-) TimerEvent: {}
+[7.022021] (-) TimerEvent: {}
+[7.122304] (-) TimerEvent: {}
+[7.222619] (-) TimerEvent: {}
+[7.322908] (-) TimerEvent: {}
+[7.423240] (-) TimerEvent: {}
+[7.523707] (-) TimerEvent: {}
+[7.624227] (-) TimerEvent: {}
+[7.724526] (-) TimerEvent: {}
+[7.824823] (-) TimerEvent: {}
+[7.925084] (-) TimerEvent: {}
+[8.025344] (-) TimerEvent: {}
+[8.125616] (-) TimerEvent: {}
+[8.225952] (-) TimerEvent: {}
+[8.326274] (-) TimerEvent: {}
+[8.426650] (-) TimerEvent: {}
+[8.526969] (-) TimerEvent: {}
+[8.627242] (-) TimerEvent: {}
+[8.727446] (-) TimerEvent: {}
+[8.827709] (-) TimerEvent: {}
+[8.927931] (-) TimerEvent: {}
+[9.028247] (-) TimerEvent: {}
+[9.128741] (-) TimerEvent: {}
+[9.228991] (-) TimerEvent: {}
+[9.329221] (-) TimerEvent: {}
+[9.429499] (-) TimerEvent: {}
+[9.529836] (-) TimerEvent: {}
+[9.630223] (-) TimerEvent: {}
+[9.730555] (-) TimerEvent: {}
+[9.830837] (-) TimerEvent: {}
+[9.931172] (-) TimerEvent: {}
+[10.031423] (-) TimerEvent: {}
+[10.131818] (-) TimerEvent: {}
+[10.232107] (-) TimerEvent: {}
+[10.332448] (-) TimerEvent: {}
+[10.432736] (-) TimerEvent: {}
+[10.533064] (-) TimerEvent: {}
+[10.633428] (-) TimerEvent: {}
+[10.733703] (-) TimerEvent: {}
+[10.834060] (-) TimerEvent: {}
+[10.934355] (-) TimerEvent: {}
+[11.034626] (-) TimerEvent: {}
+[11.135244] (-) TimerEvent: {}
+[11.235503] (-) TimerEvent: {}
+[11.335775] (-) TimerEvent: {}
+[11.436013] (-) TimerEvent: {}
+[11.536289] (-) TimerEvent: {}
+[11.636560] (-) TimerEvent: {}
+[11.736853] (-) TimerEvent: {}
+[11.837222] (-) TimerEvent: {}
+[11.937506] (-) TimerEvent: {}
+[12.037819] (-) TimerEvent: {}
+[12.138133] (-) TimerEvent: {}
+[12.238494] (-) TimerEvent: {}
+[12.338762] (-) TimerEvent: {}
+[12.439162] (-) TimerEvent: {}
+[12.539437] (-) TimerEvent: {}
+[12.639789] (-) TimerEvent: {}
+[12.740161] (-) TimerEvent: {}
+[12.840497] (-) TimerEvent: {}
+[12.940944] (-) TimerEvent: {}
+[13.041343] (-) TimerEvent: {}
+[13.141733] (-) TimerEvent: {}
+[13.242102] (-) TimerEvent: {}
+[13.342372] (-) TimerEvent: {}
+[13.442671] (-) TimerEvent: {}
+[13.542936] (-) TimerEvent: {}
+[13.643288] (-) TimerEvent: {}
+[13.743582] (-) TimerEvent: {}
+[13.843874] (-) TimerEvent: {}
+[13.944123] (-) TimerEvent: {}
+[14.044413] (-) TimerEvent: {}
+[14.144778] (-) TimerEvent: {}
+[14.245041] (-) TimerEvent: {}
+[14.345375] (-) TimerEvent: {}
+[14.445668] (-) TimerEvent: {}
+[14.545916] (-) TimerEvent: {}
+[14.646204] (-) TimerEvent: {}
+[14.746522] (-) TimerEvent: {}
+[14.846842] (-) TimerEvent: {}
+[14.878828] (armor_solver) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libarmor_solver.so\x1b[0m\n'}
+[14.946965] (-) TimerEvent: {}
+[15.047224] (-) TimerEvent: {}
+[15.131058] (armor_solver) StdoutLine: {'line': b'[100%] Built target armor_solver\n'}
+[15.135093] (armor_solver) CommandEnded: {'returncode': 0}
+[15.135500] (armor_solver) JobProgress: {'identifier': 'armor_solver', 'progress': 'install'}
+[15.139217] (armor_solver) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/rmsentry/DUST-RM-Sentry/build/armor_solver'], 'cwd': '/home/rmsentry/DUST-RM-Sentry/build/armor_solver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'rmsentry'), ('SSH_CLIENT', '192.168.1.67 45440 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/home/rmsentry/DUST-RM-Sentry/install/vision_msg/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner/lib:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/robot_decision/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver/lib:/home/rmsentry/DUST-RM-Sentry/install/icp_registration/lib:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/lib:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/lib:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation/lib:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first/lib:/home/rmsentry/DUST-RM-Sentry/install/hik_camera/lib:/home/rmsentry/DUST-RM-Sentry/install/global_interface/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/lib:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib:/home/rmsentry/DUST-RM-Sentry/install/armor_detector/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32'), ('BROWSER', '/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rmsentry'), ('OLDPWD', '/home/rmsentry'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c671878a-2099-4e33-9b64-a7ec077ff6f4.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rmsentry/DUST-RM-Sentry/install:/home/rmsentry/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rmsentry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/rmsentry/.local/bin:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter/bin:/home/rmsentry/DUST-RM-Sentry/install/armor_side/bin:/home/rmsentry/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:/home/rmsentry/.local/bin:/opt/ros/humble/bin:/home/rmsentry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/rmsentry/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libusb-1.0.so.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-57f8c2ade3.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/rmsentry/DUST-RM-Sentry/build/armor_solver'), ('SSH_CONNECTION', '192.168.1.67 45440 192.168.1.160 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rmsentry/DUST-RM-Sentry/install/vision_msg/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/build/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_decision/lib/python3.10/site-packages:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/fast_lio/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/build/fake_msg_publisher:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher/lib/python3.10/site-packages:/home/rmsentry/DUST-RM-Sentry/install/global_interface/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/home/rmsentry/DUST-RM-Sentry/build/armor_side:/home/rmsentry/DUST-RM-Sentry/install/armor_side/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rmsentry/DUST-RM-Sentry/install/auto_aim_interfaces:/home/rmsentry/DUST-RM-Sentry/install/vision_msg:/home/rmsentry/DUST-RM-Sentry/install/teb_local_planner:/home/rmsentry/DUST-RM-Sentry/install/teb_msgs:/home/rmsentry/DUST-RM-Sentry/install/robot_decision:/home/rmsentry/DUST-RM-Sentry/install/rm_bringup:/home/rmsentry/DUST-RM-Sentry/install/rm_serial_driver:/home/rmsentry/DUST-RM-Sentry/install/rm_robot_description:/home/rmsentry/DUST-RM-Sentry/install/rm_navigation:/home/rmsentry/DUST-RM-Sentry/install/rm_gimbal_description:/home/rmsentry/DUST-RM-Sentry/install/rm_decision_interfaces:/home/rmsentry/DUST-RM-Sentry/install/rm_auto_aim:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_to_laserscan:/home/rmsentry/DUST-RM-Sentry/install/pointcloud_merger:/home/rmsentry/DUST-RM-Sentry/install/point_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros2_driver:/home/rmsentry/DUST-RM-Sentry/install/livox_sdk_vendor:/home/rmsentry/DUST-RM-Sentry/install/icp_registration:/home/rmsentry/DUST-RM-Sentry/install/fast_lio:/home/rmsentry/DUST-RM-Sentry/install/livox_ros_driver2:/home/rmsentry/DUST-RM-Sentry/install/livox_interfaces:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation_ros:/home/rmsentry/DUST-RM-Sentry/install/linefit_ground_segmentation:/home/rmsentry/DUST-RM-Sentry/install/imu_complementary_filter:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_second:/home/rmsentry/DUST-RM-Sentry/install/hik_camera_first:/home/rmsentry/DUST-RM-Sentry/install/hik_camera:/home/rmsentry/DUST-RM-Sentry/install/global_interface:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter:/home/rmsentry/DUST-RM-Sentry/install/costmap_converter_msgs:/home/rmsentry/DUST-RM-Sentry/install/armor_tracker:/home/rmsentry/DUST-RM-Sentry/install/armor_solver:/home/rmsentry/DUST-RM-Sentry/install/armor_detector:/home/rmsentry/DUST-RM-Sentry/install/rm_decision:/home/rmsentry/DUST-RM-Sentry/install/fake_msg_publisher:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[15.143629] (armor_solver) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[15.143864] (armor_solver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.144027] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib/armor_solver/armor_solver_node\n'}
+[15.144444] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/include/armor_solver/armor_solver.hpp\n'}
+[15.144557] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/include/armor_solver/armor_solver_node.hpp\n'}
+[15.144606] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/include/armor_solver/manual_compensator.hpp\n'}
+[15.144639] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/include/armor_solver/trajectory_compensator.hpp\n'}
+[15.144682] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/include/armor_solver/utils.hpp\n'}
+[15.144710] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/environment/library_path.sh\n'}
+[15.144754] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/environment/library_path.dsv\n'}
+[15.144906] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/lib/libarmor_solver.so\n'}
+[15.144997] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/ament_index/resource_index/package_run_dependencies/armor_solver\n'}
+[15.145087] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/ament_index/resource_index/parent_prefix_path/armor_solver\n'}
+[15.145161] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/environment/ament_prefix_path.sh\n'}
+[15.145229] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/environment/ament_prefix_path.dsv\n'}
+[15.145299] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/environment/path.sh\n'}
+[15.145364] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/environment/path.dsv\n'}
+[15.145431] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/local_setup.bash\n'}
+[15.145496] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/local_setup.sh\n'}
+[15.145560] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/local_setup.zsh\n'}
+[15.145623] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/local_setup.dsv\n'}
+[15.145671] (armor_solver) StdoutLine: {'line': b'-- Symlinking: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/package.dsv\n'}
+[15.147270] (-) TimerEvent: {}
+[15.148486] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/ament_index/resource_index/packages/armor_solver\n'}
+[15.148536] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/ament_index/resource_index/rclcpp_components/armor_solver\n'}
+[15.148612] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.148688] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.148761] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.148834] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/cmake/armor_solverConfig.cmake\n'}
+[15.148881] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/cmake/armor_solverConfig-version.cmake\n'}
+[15.148952] (armor_solver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rmsentry/DUST-RM-Sentry/install/armor_solver/share/armor_solver/package.xml\n'}
+[15.149705] (armor_solver) CommandEnded: {'returncode': 0}
+[15.160838] (armor_solver) JobEnded: {'identifier': 'armor_solver', 'rc': 0}
+[15.161204] (-) EventReactorShutdown: {}

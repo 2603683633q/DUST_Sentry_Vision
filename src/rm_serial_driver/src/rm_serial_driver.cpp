@@ -49,8 +49,14 @@ RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions & options)
 
   // site_pub = this->create_publisher<decision_moudle::msg::Site>("/incident", 10);
   // health_pub = this->create_publisher<decision_moudle::msg::Hp>("/allhealth", 10);
-  // Detect parameter client
-  detector_param_client_ = std::make_shared<rclcpp::AsyncParametersClient>(this, "armor_detector");
+  // Detector parameter clients (support multiple detector nodes)
+  detector_node_names_ = this->declare_parameter<std::vector<std::string>>(
+    "detector_node_names",
+    std::vector<std::string>{"armor_detector_first", "armor_detector_second"});
+  for (const auto & name : detector_node_names_) {
+    detector_param_clients_[name] = std::make_shared<rclcpp::AsyncParametersClient>(this, name);
+    last_set_color_[name] = -1;  // not set yet
+  }
 
   // Tracker reset service client
   reset_tracker_client_ = this->create_client<std_srvs::srv::Trigger>("/tracker/reset");
@@ -192,12 +198,13 @@ packet.reserved2 = *reinterpret_cast<uint16_t*>(&data[14]);
 // printf("\n");
 
 bool crc_ok = crc16::Verify_CRC16_Check_Sum(data.data(), data.size());
- printf("CRC check: %s\n", crc_ok ? "PASS" : "FAIL");
+//  printf("CRC check: %s\n", crc_ok ? "PASS" : "FAIL");
         if (crc_ok) {
-          if (!initial_set_param_ || packet.detect_color != previous_receive_color_) {
-            setParam(rclcpp::Parameter("detect_color", packet.detect_color));
+          // Update desired detect_color and attempt to push to detectors
+          if (packet.detect_color != previous_receive_color_) {
             previous_receive_color_ = packet.detect_color;
           }
+          setParam(rclcpp::Parameter("detect_color", static_cast<int>(previous_receive_color_)));
 
           if (packet.reset_tracker) {
             resetTracker();
@@ -208,8 +215,8 @@ bool crc_ok = crc16::Verify_CRC16_Check_Sum(data.data(), data.size());
           // packet.roll = packet.roll * (180.0 / M_PI);
           // packet.pitch = packet.pitch *(180.0 / M_PI);
           // packet.yaw = packet.yaw * (180.0 / M_PI);  
-  printf("packet.pitch = %f\n", packet.pitch);
-  printf("packet.yaw = %f\n", packet.yaw);
+  // printf("packet.pitch = %f\n", packet.pitch);
+  // printf("packet.yaw = %f\n", packet.yaw);
           geometry_msgs::msg::TransformStamped t;
           timestamp_offset_ = this->get_parameter("timestamp_offset").as_double();
           t.header.stamp = this->now();
@@ -396,26 +403,54 @@ void RMSerialDriver::reopenPort()
 
 void RMSerialDriver::setParam(const rclcpp::Parameter & param)
 {
-  if (!detector_param_client_->service_is_ready()) {
-    RCLCPP_WARN(get_logger(), "Service not ready, skipping parameter set");
+  const int desired = param.as_int();
+
+  // Quick exit if all nodes are already synced to this value
+  bool all_synced = !detector_param_clients_.empty();
+  for (const auto & name : detector_node_names_) {
+    auto it = last_set_color_.find(name);
+    if (it == last_set_color_.end() || it->second != desired) {
+      all_synced = false;
+      break;
+    }
+  }
+  if (all_synced) {
     return;
   }
 
-  if (
-    !set_param_future_.valid() ||
-    set_param_future_.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {
-    RCLCPP_INFO(get_logger(), "Setting detect_color to %ld...", param.as_int());
-    set_param_future_ = detector_param_client_->set_parameters(
-      {param}, [this, param](const ResultFuturePtr & results) {
-        for (const auto & result : results.get()) {
-          if (!result.successful) {
-            RCLCPP_ERROR(get_logger(), "Failed to set parameter: %s", result.reason.c_str());
-            return;
+  for (const auto & name : detector_node_names_) {
+    auto client_it = detector_param_clients_.find(name);
+    if (client_it == detector_param_clients_.end()) {
+      continue;
+    }
+    auto & client = client_it->second;
+
+    // Skip if already up-to-date
+    if (last_set_color_[name] == desired) {
+      continue;
+    }
+
+    if (!client->service_is_ready()) {
+      RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 2000,
+                           "Service %s parameter server not ready, will retry...", name.c_str());
+      continue;
+    }
+
+    auto & future = set_param_futures_[name];
+    if (!future.valid() || future.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {
+      RCLCPP_INFO(get_logger(), "Setting %s.detect_color to %d...", name.c_str(), desired);
+      future = client->set_parameters(
+        {param}, [this, name, desired](const ResultFuturePtr & results) {
+          for (const auto & result : results.get()) {
+            if (!result.successful) {
+              RCLCPP_ERROR(get_logger(), "Failed to set %s.detect_color: %s", name.c_str(), result.reason.c_str());
+              return;
+            }
           }
-        }
-        RCLCPP_INFO(get_logger(), "Successfully set detect_color to %ld!", param.as_int());
-        initial_set_param_ = true;
-      });
+          last_set_color_[name] = desired;
+          RCLCPP_INFO(get_logger(), "Successfully set %s.detect_color to %d!", name.c_str(), desired);
+        });
+    }
   }
 }
 
