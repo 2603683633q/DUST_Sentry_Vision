@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_decision_interfaces/rosidl_generator_cpp/rm_decision_interfaces/msg/detail/refree__type_support.hpp

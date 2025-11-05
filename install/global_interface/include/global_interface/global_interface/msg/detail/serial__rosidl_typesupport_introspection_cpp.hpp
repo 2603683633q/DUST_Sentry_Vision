@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/global_interface/rosidl_typesupport_introspection_cpp/global_interface/msg/detail/serial__rosidl_typesupport_introspection_cpp.hpp

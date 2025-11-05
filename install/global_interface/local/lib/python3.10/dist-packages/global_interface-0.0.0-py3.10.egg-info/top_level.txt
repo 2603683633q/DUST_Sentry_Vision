@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/global_interface/ament_cmake_python/global_interface/global_interface.egg-info/top_level.txt

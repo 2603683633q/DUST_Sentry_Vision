@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/vision_msg/rosidl_typesupport_introspection_c/vision_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h

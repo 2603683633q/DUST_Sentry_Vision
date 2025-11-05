@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_navigation/ament_cmake_core/rm_navigationConfig.cmake

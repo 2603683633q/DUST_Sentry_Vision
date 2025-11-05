@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rmsentry/DUST-RM-Sentry/build/hik_camera_second/hik_camera_second_node" "TARGETS" "hik_camera_second_node" "DESTINATION" "lib/hik_camera_second")

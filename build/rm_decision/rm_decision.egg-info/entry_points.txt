@@ -1,3 +1,0 @@
-[console_scripts]
-auto_fsm = rm_decision.auto_fsm:main
-

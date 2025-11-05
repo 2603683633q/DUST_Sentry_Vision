@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/global_interface/rosidl_generator_py/global_interface/_global_interface_s.ep.rosidl_typesupport_c.c

@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_decision_interfaces/rosidl_typesupport_fastrtps_c/rm_decision_interfaces/msg/detail/refree__rosidl_typesupport_fastrtps_c.h

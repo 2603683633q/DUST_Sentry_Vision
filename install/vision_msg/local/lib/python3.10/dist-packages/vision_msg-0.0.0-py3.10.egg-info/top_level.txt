@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/vision_msg/ament_cmake_python/vision_msg/vision_msg.egg-info/top_level.txt

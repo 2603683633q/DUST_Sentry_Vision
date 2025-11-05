@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_navigation/src/launch/bringup_no_amcl_launch.py

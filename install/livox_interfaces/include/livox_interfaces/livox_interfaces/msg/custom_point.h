@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/livox_interfaces/rosidl_generator_c/livox_interfaces/msg/custom_point.h

@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_robot_description/ament_cmake_environment_hooks/local_setup.sh

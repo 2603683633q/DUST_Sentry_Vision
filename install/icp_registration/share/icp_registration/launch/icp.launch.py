@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_localization/icp_registration/launch/icp.launch.py

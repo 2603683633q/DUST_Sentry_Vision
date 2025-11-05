@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_robot_description/ament_cmake_core/rm_robot_descriptionConfig.cmake

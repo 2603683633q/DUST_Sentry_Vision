@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_serial_driver/ament_cmake_core/rm_serial_driverConfig-version.cmake

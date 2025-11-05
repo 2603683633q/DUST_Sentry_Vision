@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_decision/launch/auto_fsm.launch.py

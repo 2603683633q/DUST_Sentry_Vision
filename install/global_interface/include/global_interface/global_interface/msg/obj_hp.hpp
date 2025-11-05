@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/global_interface/rosidl_generator_cpp/global_interface/msg/obj_hp.hpp

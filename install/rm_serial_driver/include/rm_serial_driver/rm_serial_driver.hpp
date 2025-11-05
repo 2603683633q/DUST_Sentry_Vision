@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_serial_driver/include/rm_serial_driver/rm_serial_driver.hpp

@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_perception/pointcloud_merger/launch/pointcloud_merger.launch.py

@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/hik_camera/launch/hik_camera_launch.py

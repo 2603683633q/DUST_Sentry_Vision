@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/global_interface/rosidl_typesupport_fastrtps_c/global_interface/msg/detail/game_info__rosidl_typesupport_fastrtps_c.h

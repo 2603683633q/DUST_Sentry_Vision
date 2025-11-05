@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_navigation/src/launch/slam_launch.py

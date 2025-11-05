@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/livox_ros_driver2/ament_cmake_core/livox_ros_driver2Config.cmake

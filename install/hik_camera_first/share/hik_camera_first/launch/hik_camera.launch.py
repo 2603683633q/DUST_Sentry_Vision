@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_hardware_driver/ros2-hik-camera_first/launch/hik_camera.launch.py

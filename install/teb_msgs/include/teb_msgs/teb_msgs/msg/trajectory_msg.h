@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/teb_msgs/rosidl_generator_c/teb_msgs/msg/trajectory_msg.h

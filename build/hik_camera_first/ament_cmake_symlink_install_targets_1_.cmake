@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rmsentry/DUST-RM-Sentry/build/hik_camera_first/libhik_camera_first.so" "TARGETS" "hik_camera_first" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

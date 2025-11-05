@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_decision_interfaces/rosidl_generator_c/rm_decision_interfaces/msg/rosidl_generator_c__visibility_control.h

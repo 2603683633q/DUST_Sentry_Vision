@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/hik_camera/include/hik_camera/recorder.hpp

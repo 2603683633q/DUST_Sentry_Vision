@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_auto_aim/auto_aim_interfaces/msg/Armor.msg

@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/vision_msg/rosidl_typesupport_fastrtps_cpp/vision_msg/msg/detail/selected_id__rosidl_typesupport_fastrtps_cpp.hpp

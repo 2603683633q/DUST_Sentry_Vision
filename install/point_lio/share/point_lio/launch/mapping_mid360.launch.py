@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_localization/point_lio/launch/mapping_mid360.launch.py

@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_bringup/launch/bringup_two_pipelines.launch.py

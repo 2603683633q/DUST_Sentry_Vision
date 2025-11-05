@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_decision/src/vision_msg/msg/GimblePosition.msg

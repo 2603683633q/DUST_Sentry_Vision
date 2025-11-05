@@ -23,8 +23,8 @@
     flow_control: none
     parity: none
     stop_bits: "1"
-    # Names of detector nodes to configure with detect_color
-    detector_node_names: ["armor_detector_first", "armor_detector_second"]
+    # Apply detect_color to these detector nodes (supports multi-pipeline)
+    detector_nodes: ["armor_detector_first", "armor_detector_second"]
 
 /armor_detector:
   ros__parameters:

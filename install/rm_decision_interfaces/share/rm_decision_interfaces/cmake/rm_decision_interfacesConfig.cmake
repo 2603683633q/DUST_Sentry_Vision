@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/rm_decision_interfaces/ament_cmake_core/rm_decision_interfacesConfig.cmake

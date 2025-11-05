@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/vision_msg/rosidl_generator_c/vision_msg/msg/gimble_position.h

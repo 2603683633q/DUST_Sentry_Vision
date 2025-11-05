@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/src/rm_navigation/third_party/teb_local_planner/teb_msgs/msg/TrajectoryPointMsg.msg

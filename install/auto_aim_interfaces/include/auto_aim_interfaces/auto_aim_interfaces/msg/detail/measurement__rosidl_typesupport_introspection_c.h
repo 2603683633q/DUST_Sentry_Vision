@@ -1,1 +1,0 @@
-/home/rmsentry/DUST-RM-Sentry/build/auto_aim_interfaces/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/measurement__rosidl_typesupport_introspection_c.h

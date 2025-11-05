@@ -1,4 +1,0 @@
-PLUGIN;lib/librobot_decision.so
-robotdecisionsystem::decision_process;lib/librobot_decision.so
-EXECUTABLE;lib/librobot_decision.so
-robot_decision_node;lib/librobot_decision.so

@@ -1,6 +1,0 @@
-{
-  "package_name": "rm_decision_interfaces",
-  "non_idl_tuples": [
-    "/home/rmsentry/DUST-RM-Sentry/src/rm_decision/src/rm_decision_interfaces:msg/Refree.msg"
-  ]
-}
