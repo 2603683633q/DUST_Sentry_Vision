@@ -15,6 +15,7 @@
 #include <std_msgs/msg/float64.hpp>
 #include <std_srvs/srv/trigger.hpp>
 #include <visualization_msgs/msg/marker.hpp>
+#include "rm_decision_interfaces/msg/refree.hpp"
 
 // C++ system
 #include <future>
@@ -82,6 +83,8 @@ private:
   // 决策消息
   // decision_moudle::msg::Site site_msg;
   // decision_moudle::msg::Hp hp_msg;
+  // 发布给决策模块的裁判数据
+  rclcpp::Publisher<rm_decision_interfaces::msg::Refree>::SharedPtr refree_pub_;
 
   // Broadcast tf from odom to gimbal_link
   double timestamp_offset_ = 0;

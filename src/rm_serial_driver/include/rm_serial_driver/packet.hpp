@@ -29,52 +29,53 @@ struct ReceivePacket
 struct NavPacket
 {
     uint8_t header = 0xA6;  // 数据包的头部
-    struct
-    {
-        uint16_t red_1_robot_HP;
-        uint16_t red_2_robot_HP;
-        uint16_t red_3_robot_HP;
-        uint16_t red_4_robot_HP;
-        uint16_t red_5_robot_HP;
-        uint16_t red_7_robot_HP;
-        uint16_t red_outpost_HP;
-        uint16_t red_base_HP;
-        uint16_t blue_1_robot_HP;
-        uint16_t blue_2_robot_HP;
-        uint16_t blue_3_robot_HP;
-        uint16_t blue_4_robot_HP;
-        uint16_t blue_5_robot_HP;
-        uint16_t blue_7_robot_HP;
-        uint16_t blue_outpost_HP;
-        uint16_t blue_base_HP;
-    } game_robot_HP_t;  // 所有机器人血量数据
+    // struct
+    // {
+    //     uint16_t red_1_robot_HP;
+    //     uint16_t red_2_robot_HP;
+    //     uint16_t red_3_robot_HP;
+    //     uint16_t red_4_robot_HP;
+    //     uint16_t red_5_robot_HP;
+    //     uint16_t red_7_robot_HP;
+    //     uint16_t red_outpost_HP;
+    //     uint16_t red_base_HP;
+    //     uint16_t blue_1_robot_HP;
+    //     uint16_t blue_2_robot_HP;
+    //     uint16_t blue_3_robot_HP;
+    //     uint16_t blue_4_robot_HP;
+    //     uint16_t blue_5_robot_HP;
+    //     uint16_t blue_7_robot_HP;
+    //     uint16_t blue_outpost_HP;
+    //     uint16_t blue_base_HP;
+    // } game_robot_HP_t;  // 所有机器人血量数据
 
-    struct 
-    {
-        uint32_t event_data;
-    }event_data_t;  // 场地事件数据
+    // struct 
+    // {
+    //     uint32_t event_data;
+    // }event_data_t;  // 场地事件数据
 
     uint16_t current_HP;  // 机器人当前血量数据
 
-    struct
-    {
-        uint8_t game_type;        // 比赛类型
-        uint8_t game_progress;    // 当前比赛阶段
-        uint16_t stage_remain_time;   // 当前阶段剩余时间
-    } game_status_t;  // 比赛状态数据
 
-    uint16_t projectile_allowance_t;  // 剩余子弹数量
+    // struct
+    // {
+    //     uint8_t game_type;        // 比赛类型
+    //     uint8_t game_progress;    // 当前比赛阶段
+    //     uint16_t stage_remain_time;   // 当前阶段剩余时间
+    // } game_status_t;  // 比赛状态数据
 
-    uint32_t sentry_info;  // 哨兵自主决策信息
+    // uint16_t projectile_allowance_t;  // 剩余子弹数量
 
-    struct
-    {
-        float target_position_x;
-        float target_position_y;
-        uint8_t cmd_keyboard;
-        uint8_t target_robot_id;
-        uint8_t cmd_source;
-    } map_command_t;  // 选手端下发的数据
+    // uint32_t sentry_info;  // 哨兵自主决策信息
+
+    // struct
+    // {
+    //     float target_position_x;
+    //     float target_position_y;
+    //     uint8_t cmd_keyboard;
+    //     uint8_t target_robot_id;
+    //     uint8_t cmd_source;
+    // } map_command_t;  // 选手端下发的数据
 
     uint16_t checksum = 0;  // 校验和
 }__attribute__((packed));

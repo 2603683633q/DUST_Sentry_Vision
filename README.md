@@ -9,7 +9,7 @@ ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map map_decision
      3.机器人上层决策代码
      4.虚拟裁判系统代码，以便于调试
      5.高度参考厦门大学的自瞄代码
-
+     6.新增双相机自瞄
 
 
 

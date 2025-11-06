@@ -4,6 +4,7 @@
 #include <tf2/LinearMath/Quaternion.h>
 
 #include <auto_aim_interfaces/msg/detail/gimbal_cmd__struct.hpp>
+#include "rm_decision_interfaces/msg/refree.hpp"
 #include <rclcpp/logging.hpp>
 #include <rclcpp/qos.hpp>
 #include <rclcpp/utilities.hpp>
@@ -38,6 +39,9 @@ RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions & options)
   RCLCPP_INFO(get_logger(), "Start RMSerialDriver!");
 
   getParams();
+
+  // Publisher: publish referee data (robot HP) to /refree for decision node
+  refree_pub_ = this->create_publisher<rm_decision_interfaces::msg::Refree>("/refree_data", 10);
 
   // TF broadcaster
   timestamp_offset_ = this->declare_parameter("timestamp_offset", 0.0);
@@ -247,7 +251,33 @@ bool crc_ok = crc16::Verify_CRC16_Check_Sum(data.data(), data.size());
 
           RCLCPP_ERROR(get_logger(), "CRC error!");
         }
+      } 
+      else if (header[0] == 0xA6)   // 导航决策
+      {
+      	RCLCPP_INFO(get_logger(), "gggggggggggggggg");
+        data.resize(sizeof(NavPacket) - 1);
+        serial_driver_->port()->receive(data);
+        data.insert(data.begin(), header[0]);
+        NavPacket nav_packet = nav_fromVector(data);
+        // CRC 校验
+        bool crc_ok = crc16::Verify_CRC16_Check_Sum(reinterpret_cast<const uint8_t*>(&nav_packet), sizeof(nav_packet));
+        if (true || crc_ok) 
+        {
+        // 数据包有效，处理数据
+          // 读取当前血量（NavPacket 中为 uint16_t）
+          uint16_t current_HP = nav_packet.current_HP;
+          RCLCPP_INFO(get_logger(), "Received current_HP: %u", current_HP);
+          if (refree_pub_) {
+            rm_decision_interfaces::msg::Refree ref_msg;
+            ref_msg.robot_hp = current_HP;
+            refree_pub_->publish(ref_msg);
+          }
+        } 
 
+        else 
+        {
+          RCLCPP_ERROR(get_logger(), "CRC error!");
+        }
       }
       
       else {

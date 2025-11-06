@@ -1,5 +1,7 @@
 colcon build 
-cmds=(  "ros2 launch rm_bringup bringup.launch.py"
+cmds=(  
+	"ros2 launch rm_decision auto_fsm.launch.py"
+	"ros2 launch rm_bringup bringup.launch.py"
 	"ros2 launch livox_ros_driver2 msg_MID360_launch.py"
 	"ros2 launch livox_ros2_driver livox.launch.py cmdline_input_bd_code:=3WEDJ9V00100041"
 

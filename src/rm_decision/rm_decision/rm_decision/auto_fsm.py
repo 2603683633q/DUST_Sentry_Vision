@@ -14,19 +14,19 @@ from rm_decision.callback_msg import CallBackMsg
 from rm_decision.robot_navigator import BasicNavigator
 from rm_decision.nav_to_pose import nav_to_pose
 from std_msgs.msg import UInt8
+from ament_index_python.packages import get_package_share_directory
 
 
 class AutoFSM(Node):
     def __init__(self):
         super().__init__('auto_fsm_node')
 
-        #后续不修改的设定值
+        # 固定参数
         self.set_unhealth_robot_hp = 400
-        self.set_unhealth_base_hp  = 1500
 
-        #set Config
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        self.yaml_path = os.path.join(current_dir, 'config', 'goal.yaml')
+        # set Config: use installed share directory for robust path resolution
+        share_dir = get_package_share_directory('rm_decision')
+        self.yaml_path = os.path.join(share_dir, 'config', 'goal.yaml')
         self.goal_dict = dict()
         self.goal_path = []
         self.nav_goal_name = []
@@ -45,9 +45,6 @@ class AutoFSM(Node):
 
         #接收话题
         self.refree_sub = self.create_subscription(Refree, "/refree_data", self.msg_callback.callback_refree, QoSProfile(depth=1))
-        #发布话题
-        self.vision_color_pub = self.create_publisher(UInt8, "/vision_color", QoSProfile(depth=1))
-        self.vision_color_timer = self.create_timer(0.5, self.vision_color_timer_back)
 
         # Connect to Navigation
         self.navigator = BasicNavigator()
@@ -73,26 +70,22 @@ class AutoFSM(Node):
             self.get_logger().info(f'等待 {topic} 消息')
             nav_to_pose.wait_for_message(self, message_type, topic)
 
-    def vision_color_timer_back(self):
-        msg = UInt8()
-        msg.data = self.msg_callback.friend_color
-        self.vision_color_pub.publish(msg)
-
     def thread_FSM_state(self):
         while rclpy.ok():
             self.state_update()
             self.rate_nav.sleep()
 
     def state_update(self):
-        #哨兵血量高于设定血量，且基地血量健康，采取激进策略进攻
-        if self.msg_callback.current_robot_hp > self.set_unhealth_robot_hp and self.msg_callback.current_base_hp == self.set_unhealth_base_hp and self.flag == True:
+        # 仅根据机器人血量与标志位切换：
+        # - 血量高且允许进攻(flag=True) -> 进攻
+        # - 血量低或未允许进攻 -> 回血
+        if self.msg_callback.current_robot_hp > self.set_unhealth_robot_hp and self.flag:
+            self.FSM_state = 1  # 进攻
+        elif self.msg_callback.current_robot_hp <= self.set_unhealth_robot_hp:
+            self.FSM_state = 2  # 回血
+        else:
+            # 默认保持进攻（例如 flag True 但血量边界情况）
             self.FSM_state = 1
-        #哨兵血量低于设定血量，且基地血量健康，采取补给回血模式
-        elif self.msg_callback.current_base_hp == self.set_unhealth_base_hp:
-            self.FSM_state = 2 
-        #基地血量低于健康状态，采取回防基地模式
-        elif self.msg_callback.current_base_hp < self.set_unhealth_base_hp:
-            self.FSM_state = 3
 
     def thread_FSM(self):
         self.get_logger().info('准备完成, 等待比赛开始')
