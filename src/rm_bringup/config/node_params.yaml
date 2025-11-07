@@ -13,12 +13,12 @@
     gain: 12.0                      # Range: 0.0 ~ 16.9, Unit: dB
 
     enable_recorder: false
-    save_path: "/home/rm/Desktop/XMU-RCS-RM-VISION/videos"
+    save_path: "/home/rm/Desktop/DUST-RM-VISION/videos"
 
 /serial_driver:
   ros__parameters:
     timestamp_offset: 0.006
-    device_name: /dev/ttyUSB0
+    device_name: /dev/ttyACM0
     baud_rate: 115200
     flow_control: none
     parity: none
@@ -74,3 +74,11 @@
     gravity: 9.8               # 重力加速度
     compensator_type: "resistance"  # ideal or resistance
     resistance: 0.47          # 空气阻力
+    # Detector freshness window (s)
+    detector_fresh_threshold: 0.2
+    # Search behavior when both detectors miss for a while
+    search_enable: false        # 关闭搜索改为 false
+    search_enter_delay: 0.6      # 进入搜索模式的延迟（秒）
+    search_yaw_diff: -0.3        # 搜索模式下固定 yaw_diff
+    search_pitch_amp: 0.3        # pitch_diff 振幅（±0.3）
+    search_pitch_step: 0.006     # 每个周期递增步长（越大摇动越快）

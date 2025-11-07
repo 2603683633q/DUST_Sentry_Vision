@@ -102,6 +102,17 @@ private:
   rclcpp::Time last_second_time_{};
   // Freshness threshold (seconds) for detector messages
   double detector_fresh_threshold_sec_ = 0.2;
+
+  // Search behavior when both detectors have no armors for a period
+  bool search_enable_ = false;              // master switch for search behavior
+  rclcpp::Time last_any_detection_time_{};  // last time any detector saw non-empty armors
+  double search_enter_delay_sec_ = 0.6;     // delay before entering search (s)
+  double search_yaw_diff_ = -0.3;           // fixed yaw_diff in search
+  double pitch_osc_amp_high = -0.6;              // oscillation amplitude for pitch_diff
+  double pitch_osc_amp_low = 0.3;              // oscillation amplitude for pitch_diff
+  double pitch_osc_step_ = 0.006;           // step per tick for pitch_diff
+  double pitch_osc_current_ = 0.0;          // current pitch_diff value
+  int pitch_osc_dir_ = -1;                  // -1 or +1
 };
 
 }  // namespace rm_auto_aim

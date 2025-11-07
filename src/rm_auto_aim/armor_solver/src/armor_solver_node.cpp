@@ -29,6 +29,13 @@ ArmorSolverNode::ArmorSolverNode(const rclcpp::NodeOptions &options)
   debug_mode_ = this->declare_parameter("debug", true);
   // Parameter to control detector freshness window
   detector_fresh_threshold_sec_ = this->declare_parameter("detector_fresh_threshold", 0.2);
+  // Search behavior parameters
+  search_enable_ = this->declare_parameter("search_enable", true);
+  search_enter_delay_sec_ = this->declare_parameter("search_enter_delay", 0.6);
+  search_yaw_diff_ = this->declare_parameter("search_yaw_diff", -0.3);
+  pitch_osc_amp_low = this->declare_parameter("pitch_osc_amp_low", -0.3);
+  pitch_osc_amp_high = this->declare_parameter("pitch_osc_amp_high", 0.6);
+  pitch_osc_step_ = this->declare_parameter("search_pitch_step", 0.006);
 
   // Subscriber with tf2 message_filter
   // tf2 relevant
@@ -79,6 +86,9 @@ ArmorSolverNode::ArmorSolverNode(const rclcpp::NodeOptions &options)
       latest_first_count_ = static_cast<int>(msg->armors.size());
       // Use local receipt time to judge freshness (camera header stamps may be unsynced)
       last_first_time_ = this->now();
+      if (!msg->armors.empty()) {
+        last_any_detection_time_ = last_first_time_;
+      }
     });
 
   armors_second_sub_ = this->create_subscription<auto_aim_interfaces::msg::Armors>(
@@ -90,6 +100,7 @@ ArmorSolverNode::ArmorSolverNode(const rclcpp::NodeOptions &options)
       if (!msg->armors.empty()) {
         // Use the first armor's x coordinate as direction hint
         latest_second_x_ = msg->armors.front().pose.position.x;
+        last_any_detection_time_ = last_second_time_;
       }
     });
 }
@@ -110,6 +121,12 @@ void ArmorSolverNode::timerCallback() {
                             ((now - last_second_time_).seconds() <= detector_fresh_threshold_sec_);
   const bool first_fresh = (last_first_time_.nanoseconds() > 0) &&
                            ((now - last_first_time_).seconds() <= detector_fresh_threshold_sec_);
+  // Determine if any detector recently saw something (non-empty armors)
+  const bool any_recent_detection = (first_fresh && latest_first_count_ > 0) ||
+                                    (second_fresh && latest_second_count_ > 0);
+  if (any_recent_detection) {
+    last_any_detection_time_ = now;
+  }
   if ((!first_fresh || latest_first_count_ == 0) && second_fresh && latest_second_count_ > 0) {
     control_msg.header.stamp = now;
     control_msg.header.frame_id = "gimbal_link";
@@ -130,6 +147,43 @@ void ArmorSolverNode::timerCallback() {
       RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
         "Override yaw_diff=%.3f (second_x=%.3f, first_count=%d, second_count=%d)",
         control_msg.yaw_diff, latest_second_x_, latest_first_count_, latest_second_count_);
+    }
+    gimbal_pub_->publish(control_msg);
+    if (debug_mode_) {
+      publishMarkers(control_msg);
+    }
+    return;
+  }
+
+  // Search mode: if no detections from either detector for a while, scan with fixed yaw and oscillating pitch
+  const double no_detect_duration = (last_any_detection_time_.nanoseconds() > 0)
+                                      ? (now - last_any_detection_time_).seconds()
+                                      : std::numeric_limits<double>::infinity();
+  if (search_enable_ && no_detect_duration >= search_enter_delay_sec_) {
+    control_msg.header.stamp = now;
+    control_msg.header.frame_id = "gimbal_link";
+    control_msg.yaw = 0.0;
+    control_msg.pitch = 0.0;
+    control_msg.distance = -1.0;
+    control_msg.fire_advice = false;
+
+    // Fixed yaw_diff
+    control_msg.yaw_diff = search_yaw_diff_;
+    // Triangular oscillation for pitch_diff between [-amp, +amp]
+    pitch_osc_current_ += pitch_osc_step_ * static_cast<double>(pitch_osc_dir_);
+    if (pitch_osc_current_ > pitch_osc_amp_high) {
+      pitch_osc_current_ = pitch_osc_amp_high;
+      pitch_osc_dir_ = -1;
+    } else if (pitch_osc_current_ < pitch_osc_amp_low) {
+      pitch_osc_current_ = pitch_osc_amp_low;
+      pitch_osc_dir_ = 1;
+    }
+    control_msg.pitch_diff = pitch_osc_current_;
+
+    if (debug_mode_) {
+      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 500,
+        "Search mode: yaw_diff=%.3f, pitch_diff=%.3f (no_detect=%.2fs)",
+        control_msg.yaw_diff, control_msg.pitch_diff, no_detect_duration);
     }
     gimbal_pub_->publish(control_msg);
     if (debug_mode_) {
